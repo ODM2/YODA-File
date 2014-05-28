@@ -12,9 +12,9 @@
 			{"Person": "Anthony Aufdenkampe", "OrcID": "0000-0002-1998-3479"}],
 		"Publisher": "Stroud Water Research Center",
 		"PublicationYear": 2012,
-		"CitationLink": "http://czo.stroudcenter.org/data/hydrology/CRB_WELL_WATERLEVEL_1988_2008.csv"}
-	"Versions": {"VersionCode": "0.1.1", "PriorVersionDataSetUUID": "NULL"}
-	"DataSetAnnotations": ""}
+		"CitationLink": "http://czo.stroudcenter.org/data/hydrology/CRB_WELL_WATERLEVEL_1988_2008.csv"},
+	"Versions": {"VersionCode": "0.1.1", "PriorVersionDataSetUUID": "NULL"},
+	"DataSetAnnotations": ""},
 	
 "SamplingFeature_Attributes": {
 	"SamplingFeature_DEFAULT_Attributes": {
@@ -24,18 +24,18 @@
 		"ElevationDatum": "NAD83", 
 		"SitesFileLink": "http://czo.stroudcenter.org/data/data-management-cyberinfrastructure/CRB_SITES.csv"},
 	"SamplingFeature_TableColumns": [
-		"SamplingFeatureCode", "Latitude", "Longitude", "Elevation",""]
+		"SamplingFeatureCode", "Latitude", "Longitude", "Elevation",""],
 	"SamplingFeature_Table": [[
 		"WELL003", 39.86231721, -75.78329371, 102.95187,""],[
    		"WELL004",39.86232285, -75.78329327, 102.970454,""],[
-    	"WELL005",39.86232964, -75.78329472, 102.941,""]]},
+   		"WELL005",39.86232964, -75.78329472, 102.941,""]]},
     	
 "Method_Attributes": {
 	"Method_DEFAULT_Attributes": {
 		"MethodType": "Hydrological", 
 		"MethodsFileLink": "http://czo.stroudcenter.org/data/data-management-cyberinfrastructure/CZO_CRB_METHODS.csv"},
 	"Method_TableColumns": [
-		"MethodCode", "MethodName", "MethodDescription",""]
+		"MethodCode", "MethodName", "MethodDescription",""],
 	"Method_Table": [[
 		"MANUAL_WATERLEVEL", "", "Water level determined from manual depth to water measurement and well elevation",""],[
 		"AUTO_WATERLEVEL", "", "Water level determined from continuous data logger water depth measurements and well elevation",""]]},
