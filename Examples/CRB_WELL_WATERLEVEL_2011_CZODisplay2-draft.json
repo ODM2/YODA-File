@@ -1,48 +1,73 @@
-{"CZO Display File": {"Version": 2.0, "Profile": "TimeSeries"},
+{"CZO Display File": {"Version": 2.0, "Profile": "HydroTimeSeries"},
+
 "DataSet_Attributes": {
 	"DataSetUUID": "abcdefg1234567",
-	"DataSetType": "xyz",
-	"DatasetCode": "123",
+	"DataSetType": "TimeSeriesTable",
+	"DatasetCode": "CRB_WellLevels2011",
 	"DatasetTitle": "Christina Watershed Well Water Levels",
-	"DatasetAbstract": "Well Water Levels",
+	"DatasetAbstract": "Groundwater levels collected from wells in the Christina River Basin by the Stroud Water Research Center.",
 	"CitationForDataset": {
 		"Authors": [
 			{"Person": "Denis Newbold", "OrcID": "0000-0002-1998-3479"},
 			{"Person": "Anthony Aufdenkampe", "OrcID": "0000-0002-1998-3479"}],
-		"CitationLink": "http://czo.stroudcenter.org/data/hydrology/CRB_WELL_WATERLEVEL_1988_2008.csv",
-		"DOI": "",
-
-
-	"VARIABLES": "Water Level",
-	"KEYWORDS": ["well","groundwater","white clay creek","stroud water research center","christina river"],
-	"CITATION": "Well Water Level data collected by Stroud Water Research Center",
-	"PUBLICATIONS": "",
-	"DataSetAnnotations": "",
-	"DEFAULT_PARAMETER": {
+		"Publisher": "Stroud Water Research Center",
+		"PublicationYear": 2012,
+		"CitationLink": "http://czo.stroudcenter.org/data/hydrology/CRB_WELL_WATERLEVEL_1988_2008.csv"}
+	"Versions": {"VersionCode": "0.1.1", "PriorVersionDataSetUUID": "NULL"}
+	"DataSetAnnotations": ""}
+	
+"SamplingFeature_Attributes": {
+	"SamplingFeature_DEFAULT_Attributes": {
+		"SamplingFeatureType": "Site", 
+		"SiteType": "Well", 
+		"LatLonDatum_SRSCode": "WGS84", 
+		"ElevationDatum": "NAD83", 
+		"SitesFileLink": "http://czo.stroudcenter.org/data/data-management-cyberinfrastructure/CRB_SITES.csv"},
+	"SamplingFeature_TableColumns": [
+		"SamplingFeatureCode", "Latitude", "Longitude", "Elevation",""]
+	"SamplingFeature_Table": [[
+		"WELL003", 39.86231721, -75.78329371, 102.95187,""],[
+   		"WELL004",39.86232285, -75.78329327, 102.970454,""],[
+    	"WELL005",39.86232964, -75.78329472, 102.941,""]]},
+    	
+"Method_Attributes": {
+	"Method_DEFAULT_Attributes": {
+		"MethodType": "Hydrological", 
+		"MethodsFileLink": "http://czo.stroudcenter.org/data/data-management-cyberinfrastructure/CZO_CRB_METHODS.csv"},
+	"Method_TableColumns": [
+		"MethodCode", "MethodName", "MethodDescription",""]
+	"Method_Table": [[
+		"MANUAL_WATERLEVEL", "", "Water level determined from manual depth to water measurement and well elevation",""],[
+		"AUTO_WATERLEVEL", "", "Water level determined from continuous data logger water depth measurements and well elevation",""]]},
+		
+"Observation_Attributes": {
+	"Observation_DEFAULT_Attributes": {
+		"ResultType": "TimeSeries", 
+		"SampledMedium": "groundwater", 
+		"UTCOffset": -5, 
+		"ProcessingLevel": 1, 
 		"NoDataValue": -9999,
-		"TimeSupport": 0,
-		"TimeSupportUnits": "hr",
-		"SampleMedium": "Not Relevant",
-		"SampleType": "No Sample",
+		"TimeAggregationInterval": 0,
+		"TimeAggregationIntervalUnits": "hr"},
+	"Observation_TableColumns": [
+
+
+
+INCOMPLTETE BELOW HERE
+
+
+	
+	"VARIABLES": "Water Level",
+
+	"DEFAULT_PARAMETER": {
+		"SampleType": "No Sample", 
 		"ValueType": "Derived Value",
-		"DataLevel": 1,
-		"UTCOffset": -5,
-		"TimeZone": "EST",
-		"CensorCode": "nc",
-		"DataBeginsOnRow": 39,
-		"DataFile": [
-			"CRB_WELL_WATERLEVEL_1988_2008.csv",
-			"CRB_WELL_WATERLEVEL_2009.csv",
-			"CRB_WELL_WATERLEVEL_2010.csv",
-			"CRB_WELL_WATERLEVEL_2011.csv",
-			"CRB_WELL_WATERLEVEL_2012.csv" ],
-		"SitesFile": "http://czo.stroudcenter.org/data/data-management-cyberinfrastructure/CRB_SITES.csv",
-		"MethodsFile": "http://czo.stroudcenter.org/data/data-management-cyberinfrastructure/CZO_CRB_METHODS.csv"}},
+		"CensorCode": "nc"}
 "COLUMN_ATTRIBUTES": {
-    "Column1": {"label": "ValueAttribute", "value": "SiteCode"},
-    "Column2": {"label": "ValueAttribute", "value": "dateTime", "format": "yyyyMMdd H:mm"},
-    "Column3": {"label": "VariableName", "value": "Water level", "units": "m", "method": "manual_waterlevel", "datatype": "Sporadic"},
-    "Column4": {"label": "VariableName", "value": "Water level", "units": "m", "method": "auto_waterlevel", "datatype": "Continuous"}},
+    "Column1": {"label": "ValueAttribute", "value": "SiteCode"}, 
+    "Column2": {"label": "ValueAttribute", "value": "dateTime", "format": "yyyyMMdd H:mm"}, 
+    "Column3": {"label": "VariableName", "value": "Water level", "units": "m", "method": "manual_waterlevel", "datatype": "Sporadic"}, 
+    "Column4": {"label": "VariableName", "value": "Water level", "units": "m", "method": "auto_waterlevel", "datatype": "Continuous"}}, 
 "HEADER": [
 "SiteCode","DateTime (EST)","Water_level_m (manual)","Water_level_m (logger)",""], 
 "DATA": [ [
