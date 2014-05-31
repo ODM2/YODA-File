@@ -6,8 +6,8 @@ The [CZO Display File v1](http://criticalzone.org/national/publications/pub/whit
 
 ###Goals
 Our goal for **CZO Display File v2** is to substantially extend the CZO Display File specification to accomodate the full diversity of critical zone science data -- such as hydrological time series, soil profile geochemistry, biodiversity transects, etc. -- that can be organized with the [Observations Data Model v2 (ODM2)](https://github.com/UCHIC/ODM2).  In addition, the CZO Display File v2 will meet the following requirements:
-* **Human readable**. Anyone opening the file in a text editor or spreadsheet applicaiton should be able to quickly and intuitively understand the file contents and how to use the data.
-* **Machine parsable**.  The file should be very easy to parse and validate with the wide variety of software tools used by scientists.
+* *Easy for humans to read and write**. Anyone opening the file in a text editor or spreadsheet applicaiton should be able to quickly and intuitively understand the file contents and how to use the data.
+* **Easy for machines to parse and generate**.  The file should be very easy to parse and validate with the wide variety of software tools used by scientists.
 * **Conform to the metadata requirements of an [ODM2](https://github.com/UCHIC/ODM2) [Dataset](https://github.com/UCHIC/ODM2/blob/master/doc/ODM2Docs/core_datasets.md)**, and yet have the flexibility to utilize a variety of controlled vocabularies.
 * **Serve as a self-describing archival file format** that is readily accepted by earth and environmental science data respositories, such as [IEDA EarthChem](http://www.earthchem.org/library) or [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/)
 
