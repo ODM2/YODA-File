@@ -1,4 +1,4 @@
-{"CZO Display File": {"Version": 2.0, "Profile": "HydroTimeSeries"},
+{"CZO Display File": {"Version": "2.0.0 beta", "Profile": "HydroTimeSeries"},
 
 "DataSet_Attributes": {
 	"DataSetUUID": "abcdefg1234567",
@@ -49,7 +49,23 @@
 		"NoDataValue": -9999,
 		"TimeAggregationInterval": 0,
 		"TimeAggregationIntervalUnits": "hr"},
-	"Observation_TableColumns": [
+	"Observation_TableColumn_Attributes": {{
+	    "ColumnNumber": 1, "ODM2_FieldName": "SamplingFeatureCode"},{
+    	"ColumnNumber": 2, "ODM2_FieldName":"ResultDateTime", "format": "yyyyMMdd H:mm"},{
+    	"ColumnNumber": 3, "ODM2_FieldName":"VariableCode", "units": "m"},{
+    	"ColumnNumber": 4, "ODM2_FieldName":"MethodCode"}},
+	"Observation_TableColumn_Labels": [
+	    "SamplingFeatureCode", "ResultDateTime", "Water level", "MethodCode"]
+}
+	    
+	"Observation_Table": [[
+		"WELL003","20110117 14:17",101.4,"manual_waterlevel",""],[
+		"WELL003","20110128 16:51",101.43,"manual_waterlevel",""],[
+		"WELL003","20110128 17:24",101.43,"auto_waterlevel",""],[
+		"WELL003","20110128 17:30",101.43,"auto_waterlevel",""],[
+		"WELL003","20110128 17:45",101.43,"auto_waterlevel",""],[
+		"WELL003","20110128 18:00",101.43,"auto_waterlevel",""],[
+		"WELL003","20110128 18:15",101.43,"auto_waterlevel",""]]}
 
 
 
