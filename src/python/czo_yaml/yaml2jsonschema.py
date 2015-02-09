@@ -22,13 +22,13 @@ console.setFormatter(formatter)
 # add the handler to the root logger
 logging.getLogger('').addHandler(console)
 
-filelogger = logging.FileHandler('yaml2json.log')
+filelogger = logging.FileHandler('yaml2json.log',  mode='w',) # using w to truncate. Use a to append.
 filelogger.setFormatter(logging.Formatter('\n%(message)s'))
 logger = logging.getLogger('')
 logger.addHandler(console)
 logger.addHandler(filelogger)
 
-def convert(args):
+def convert_to_jsonschema(args):
     stream = file(args.json_source)
     ymal_data = yaml.load (stream)
 
@@ -52,9 +52,9 @@ def main():
 
     subparsers = parser.add_subparsers(help='sub-command help')
 
-    parser_validate = subparsers.add_parser('json', parents=[default_parser])
-    parser_validate.add_argument('json_schema_file_path', type=str, help='json schema file output path')
-    parser_validate.set_defaults(func=convert)
+    parser_convert = subparsers.add_parser('json', parents=[default_parser])
+    parser_convert.add_argument('json_schema_file_path', type=str, help='json schema file output path')
+    parser_convert.set_defaults(func=convert_to_jsonschema)
 
     # parser_validate = subparsers.add_parser('validate', parents=[default_parser])
     # parser_validate.add_argument('json_schema_file_path', type=str, help='json schema file path')

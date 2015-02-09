@@ -108,7 +108,7 @@
     "Observation_TableColumns": [
       {
         "VARIABLES": [
-          {
+          { "type":"variable",
             "name": "Water Level",
             "DEFAULTS": {
               "SampleType": "No Sample",
@@ -117,19 +117,19 @@
             }
           }
         ],
-        "COLUMN_ATTRIBUTES": {
-          "Column": {
+        "COLUMN_ATTRIBUTES": [
+          { "type":"COLUMN_ATTRIBUTES",
             "position": 1,
             "label": "SiteCode",
             "value": "SiteCode"
           },
-          "Column": {
+          {"type":"COLUMN_ATTRIBUTES",
             "position": 2,
             "label": "DateTime (EST)",
             "value": "dateTime",
             "format": "yyyyMMdd H:mm"
           },
-          "Column": {
+          {"type":"COLUMN_ATTRIBUTES",
             "position": 3,
             "label": "Water_level_m (manual)",
             "value": "Water level",
@@ -137,7 +137,7 @@
             "method": "manual_waterlevel",
             "datatype": "Sporadic"
           },
-          "Column": {
+          {"type":"COLUMN_ATTRIBUTES",
             "position": 4,
             "label": "Water_level_m (logger}",
             "value": "Water level",
@@ -145,7 +145,7 @@
             "method": "auto_waterlevel",
             "datatype": "Continuous"
           }
-        },
+        ],
         "DATA": [
           [
             "WELL003",

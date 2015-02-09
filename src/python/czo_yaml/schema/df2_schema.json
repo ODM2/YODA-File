@@ -1,0 +1,377 @@
+{
+    "required": [
+        "CZO Display File", 
+        "DataSet_Attributes", 
+        "Method_Attributes", 
+        "Observation_Attributes", 
+        "SamplingFeature_Attributes"
+    ], 
+    "type": "object", 
+    "properties": {
+        "Observation_Attributes": {
+            "required": [
+                "Observation_DEFAULT_Attributes", 
+                "Observation_TableColumns"
+            ], 
+            "type": "object", 
+            "properties": {
+                "Observation_TableColumns": {
+                    "items": [
+                        {
+                            "required": [
+                                "COLUMN_ATTRIBUTES", 
+                                "DATA", 
+                                "VARIABLES"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "VARIABLES": {
+                                    "items": [
+                                        {
+                                            "required": [
+                                                "DEFAULTS", 
+                                                "name", 
+                                                "type"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                }, 
+                                                "name": {
+                                                    "type": "string"
+                                                }, 
+                                                "DEFAULTS": {
+                                                    "required": [
+                                                        "CensorCode", 
+                                                        "SampleType", 
+                                                        "ValueType"
+                                                    ], 
+                                                    "type": "object", 
+                                                    "properties": {
+                                                        "ValueType": {
+                                                            "type": "string"
+                                                        }, 
+                                                        "CensorCode": {
+                                                            "type": "string"
+                                                        }, 
+                                                        "SampleType": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ], 
+                                    "type": "array"
+                                }, 
+                                "DATA": {
+                                    "items": [
+                                        {
+                                            "items": [
+                                                {
+                                                    "type": [
+                                                        "number", 
+                                                        "string"
+                                                    ]
+                                                }
+                                            ], 
+                                            "type": "array"
+                                        }
+                                    ], 
+                                    "type": "array"
+                                }, 
+                                "COLUMN_ATTRIBUTES": {
+                                    "items": [
+                                        {
+                                            "required": [
+                                                "label", 
+                                                "position", 
+                                                "type", 
+                                                "value"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "format": {
+                                                    "type": "string"
+                                                }, 
+                                                "datatype": {
+                                                    "type": "string"
+                                                }, 
+                                                "value": {
+                                                    "type": "string"
+                                                }, 
+                                                "label": {
+                                                    "type": "string"
+                                                }, 
+                                                "units": {
+                                                    "type": "string"
+                                                }, 
+                                                "position": {
+                                                    "type": "integer"
+                                                }, 
+                                                "type": {
+                                                    "type": "string"
+                                                }, 
+                                                "method": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    ], 
+                                    "type": "array"
+                                }
+                            }
+                        }
+                    ], 
+                    "type": "array"
+                }, 
+                "Observation_DEFAULT_Attributes": {
+                    "required": [
+                        "NoDataValue", 
+                        "ProcessingLevel", 
+                        "ResultType", 
+                        "SampledMedium", 
+                        "TimeAggregationInterval", 
+                        "TimeAggregationIntervalUnits", 
+                        "UTCOffset"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "TimeAggregationIntervalUnits": {
+                            "type": "string"
+                        }, 
+                        "ProcessingLevel": {
+                            "type": "integer"
+                        }, 
+                        "NoDataValue": {
+                            "type": "integer"
+                        }, 
+                        "ResultType": {
+                            "type": "string"
+                        }, 
+                        "UTCOffset": {
+                            "type": "integer"
+                        }, 
+                        "SampledMedium": {
+                            "type": "string"
+                        }, 
+                        "TimeAggregationInterval": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }, 
+        "SamplingFeature_Attributes": {
+            "required": [
+                "SamplingFeature_DEFAULT_Attributes", 
+                "SamplingFeature_Table", 
+                "SamplingFeature_TableColumns"
+            ], 
+            "type": "object", 
+            "properties": {
+                "SamplingFeature_Table": {
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "type": [
+                                        "number", 
+                                        "string"
+                                    ]
+                                }
+                            ], 
+                            "type": "array"
+                        }
+                    ], 
+                    "type": "array"
+                }, 
+                "SamplingFeature_DEFAULT_Attributes": {
+                    "required": [
+                        "ElevationDatum", 
+                        "LatLonDatum_SRSCode", 
+                        "SamplingFeatureType", 
+                        "SiteType", 
+                        "SitesFileLink"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "ElevationDatum": {
+                            "type": "string"
+                        }, 
+                        "LatLonDatum_SRSCode": {
+                            "type": "string"
+                        }, 
+                        "SamplingFeatureType": {
+                            "type": "string"
+                        }, 
+                        "SiteType": {
+                            "type": "string"
+                        }, 
+                        "SitesFileLink": {
+                            "type": "string"
+                        }
+                    }
+                }, 
+                "SamplingFeature_TableColumns": {
+                    "items": [
+                        {
+                            "type": "string"
+                        }
+                    ], 
+                    "type": "array"
+                }
+            }
+        }, 
+        "Method_Attributes": {
+            "required": [
+                "Method_DEFAULT_Attributes", 
+                "Method_Table", 
+                "Method_TableColumns"
+            ], 
+            "type": "object", 
+            "properties": {
+                "Method_DEFAULT_Attributes": {
+                    "required": [
+                        "MethodType", 
+                        "MethodsFileLink"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "MethodType": {
+                            "type": "string"
+                        }, 
+                        "MethodsFileLink": {
+                            "type": "string"
+                        }
+                    }
+                }, 
+                "Method_TableColumns": {
+                    "items": [
+                        {
+                            "type": "string"
+                        }
+                    ], 
+                    "type": "array"
+                }, 
+                "Method_Table": {
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "type": "string"
+                                }
+                            ], 
+                            "type": "array"
+                        }
+                    ], 
+                    "type": "array"
+                }
+            }
+        }, 
+        "CZO Display File": {
+            "required": [
+                "Profile", 
+                "Version"
+            ], 
+            "type": "object", 
+            "properties": {
+                "Profile": {
+                    "type": "string"
+                }, 
+                "Version": {
+                    "type": "number"
+                }
+            }
+        }, 
+        "DataSet_Attributes": {
+            "required": [
+                "CitationForDataset", 
+                "DataSetAnnotations", 
+                "DataSetType", 
+                "DataSetUUID", 
+                "DatasetAbstract", 
+                "DatasetCode", 
+                "DatasetTitle", 
+                "Versions"
+            ], 
+            "type": "object", 
+            "properties": {
+                "DatasetAbstract": {
+                    "type": "string"
+                }, 
+                "CitationForDataset": {
+                    "required": [
+                        "Authors", 
+                        "CitationLink", 
+                        "PublicationYear", 
+                        "Publisher"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "Publisher": {
+                            "type": "string"
+                        }, 
+                        "PublicationYear": {
+                            "type": "integer"
+                        }, 
+                        "CitationLink": {
+                            "type": "string"
+                        }, 
+                        "Authors": {
+                            "items": [
+                                {
+                                    "required": [
+                                        "OrcID", 
+                                        "Person"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "OrcID": {
+                                            "type": "string"
+                                        }, 
+                                        "Person": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            ], 
+                            "type": "array"
+                        }
+                    }
+                }, 
+                "Versions": {
+                    "required": [
+                        "PriorVersionDataSetUUID", 
+                        "VersionCode"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "VersionCode": {
+                            "type": "string"
+                        }, 
+                        "PriorVersionDataSetUUID": {
+                            "type": "string"
+                        }
+                    }
+                }, 
+                "DataSetUUID": {
+                    "type": "string"
+                }, 
+                "DatasetCode": {
+                    "type": "string"
+                }, 
+                "DatasetTitle": {
+                    "type": "string"
+                }, 
+                "DataSetType": {
+                    "type": "string"
+                }, 
+                "DataSetAnnotations": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

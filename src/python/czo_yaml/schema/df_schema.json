@@ -1,0 +1,221 @@
+{
+    "required": [
+        "data", 
+        "doc", 
+        "header"
+    ], 
+    "type": "object", 
+    "properties": {
+        "doc": {
+            "required": [
+                "ABSTRACT", 
+                "CITATION", 
+                "COMMENTS", 
+                "DEFAULT_PARAMETER", 
+                "INVESTIGATOR", 
+                "KEYWORDS", 
+                "PUBLICATIONS", 
+                "TITLE", 
+                "VARIABLES"
+            ], 
+            "type": "object", 
+            "properties": {
+                "TITLE": {
+                    "type": "string"
+                }, 
+                "INVESTIGATOR": {
+                    "type": "string"
+                }, 
+                "ABSTRACT": {
+                    "type": "string"
+                }, 
+                "CITATION": {
+                    "type": "string"
+                }, 
+                "COMMENTS": {
+                    "type": "string"
+                }, 
+                "PUBLICATIONS": {
+                    "type": "string"
+                }, 
+                "KEYWORDS": {
+                    "items": [
+                        {
+                            "type": "string"
+                        }
+                    ], 
+                    "type": "array"
+                }, 
+                "DEFAULT_PARAMETER": {
+                    "required": [
+                        "CensorCode", 
+                        "DataBeginsOnRow", 
+                        "DataLevel", 
+                        "NoDataValue", 
+                        "SampleMedium", 
+                        "SampleType", 
+                        "TimeSupport", 
+                        "TimeSupportUnits", 
+                        "TimeZone", 
+                        "UTCOffset", 
+                        "ValueType"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "TimeSupportUnits": {
+                            "type": "string"
+                        }, 
+                        "DataLevel": {
+                            "type": "integer"
+                        }, 
+                        "SampleMedium": {
+                            "type": "string"
+                        }, 
+                        "ValueType": {
+                            "type": "string"
+                        }, 
+                        "CensorCode": {
+                            "type": "string"
+                        }, 
+                        "SampleType": {
+                            "type": "string"
+                        }, 
+                        "NoDataValue": {
+                            "type": "integer"
+                        }, 
+                        "UTCOffset": {
+                            "type": "integer"
+                        }, 
+                        "TimeZone": {
+                            "type": "string"
+                        }, 
+                        "DataBeginsOnRow": {
+                            "type": "integer"
+                        }, 
+                        "TimeSupport": {
+                            "type": "integer"
+                        }
+                    }
+                }, 
+                "VARIABLES": {
+                    "type": "string"
+                }
+            }
+        }, 
+        "data": {
+            "items": [
+                {
+                    "items": [
+                        {
+                            "type": [
+                                "number", 
+                                "string"
+                            ]
+                        }
+                    ], 
+                    "type": "array"
+                }
+            ], 
+            "type": "array"
+        }, 
+        "header": {
+            "required": [
+                "COL1", 
+                "COL2", 
+                "COL3", 
+                "COL4"
+            ], 
+            "type": "object", 
+            "properties": {
+                "COL4": {
+                    "required": [
+                        "datatype", 
+                        "label", 
+                        "method", 
+                        "units", 
+                        "value"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "units": {
+                            "type": "string"
+                        }, 
+                        "datatype": {
+                            "type": "string"
+                        }, 
+                        "method": {
+                            "type": "string"
+                        }, 
+                        "value": {
+                            "type": "string"
+                        }, 
+                        "label": {
+                            "type": "string"
+                        }
+                    }
+                }, 
+                "COL2": {
+                    "required": [
+                        "format", 
+                        "label", 
+                        "value"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "label": {
+                            "type": "string"
+                        }, 
+                        "value": {
+                            "type": "string"
+                        }, 
+                        "format": {
+                            "type": "string"
+                        }
+                    }
+                }, 
+                "COL3": {
+                    "required": [
+                        "datatype", 
+                        "label", 
+                        "method", 
+                        "units", 
+                        "value"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "units": {
+                            "type": "string"
+                        }, 
+                        "datatype": {
+                            "type": "string"
+                        }, 
+                        "method": {
+                            "type": "string"
+                        }, 
+                        "value": {
+                            "type": "string"
+                        }, 
+                        "label": {
+                            "type": "string"
+                        }
+                    }
+                }, 
+                "COL1": {
+                    "required": [
+                        "label", 
+                        "value"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "value": {
+                            "type": "string"
+                        }, 
+                        "label": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
