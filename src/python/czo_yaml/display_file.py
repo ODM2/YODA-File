@@ -11,7 +11,7 @@ import genson
 import json
 from urllib2 import urlopen
 import json
-from jsonschema import validate, ValidationError, SchemaError,Draft4Validator
+from jsonschema import validate, ValidationError, SchemaError,Draft4Validator,ErrorTree
 from string import Formatter
 
 logging.basicConfig(level=logging.DEBUG)
@@ -50,7 +50,20 @@ def df_validate(args ):
         try:
             v = Draft4Validator(json_schema)
             errors = v.iter_errors(ymal_data)
-            for error in sorted(errors, key=str):
+            # building an ErrorTree fails.
+            # Means we can't use ErrorTree to get a count or provide more details.
+            #   possibly to do  Space in KeyName?.
+            #tree = ErrorTree(errors)
+            #tree = ErrorTree(v.iter_errors(ymal_data))
+            errorList =  list(sorted(errors, key=lambda e: e.path))
+
+           #if (tree.total_errors==0 ) :
+            if (len(errorList) == 0):
+                logger.info('Level 2 validation; File valid to Display File Structural Specification')
+                return
+
+            #for error in tree.errors:
+            for error in errorList:
                 logger.info ('in iterated errors')
                 logger.warn (  error.message + ' in ' +
                 "/".join( [ str(element) for element in error.path ] )
