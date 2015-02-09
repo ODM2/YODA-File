@@ -85,7 +85,7 @@ def convert(args ):
 
     if (args.format == 'json'):
         # indent forces pretty print
-        json_schema = json.dumps(ymal_data)
+        json_schema = json.dumps(ymal_data,indent=4,sort_keys=False)
         logger.info(json_schema)
         with open(args.output, 'w') as json_schema_file:
                 json_schema_file.write(json_schema)
