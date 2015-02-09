@@ -1,0 +1,14 @@
+Loading example:
+Load json output yaml
+$ display_file.py format yaml ../../../Examples/CRB_WELL_WATERLEVEL_2011_CZODisplay2-draft2.json output/draft2.yaml
+load
+$ display_file.py format json ../../../Examples/CRB_WELL_WATERLEVEL_2011_CZODisplay2-draft2.json output/draft2.json
+
+validate a YAML:
+$ display_file.py validate ../../../Examples/CRB_WELL_WATERLEVEL_2011_CZODisplay2-draft2.yaml
+
+validate a json:
+$ dev_czo/CZODisplayFile2/src/python/czo_yaml/display_file.py validate ../../../Examples/CRB_WELL_WATERLEVEL_2011_CZODisplay2-draft2.json
+
+Invalid file Reading a "v1 yaml' with v2 schema
+$ display_file.py validate ../../../Examples/CRB_WELL_WATERLEVEL_2011_CZODisplay1.yml
