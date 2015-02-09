@@ -11,7 +11,8 @@ import genson
 import json
 from urllib2 import urlopen
 import json
-from jsonschema import validate, ValidationError
+from jsonschema import validate, ValidationError, SchemaError,Draft4Validator
+from string import Formatter
 
 logging.basicConfig(level=logging.DEBUG)
 console = logging.StreamHandler()
@@ -44,13 +45,21 @@ def df_validate(args ):
     validation_log.append("level 0: File valid JSON or YAML")
     if (level > 0 ):
         schema = file(args.schema)
-        json_scheam = json.load(schema)
-        validation_log.append("Strating Level 2")
+        json_schema = json.load(schema)
+        validation_log.append("Starting Level 2")
         try:
-            validate(ymal_data, json_scheam)
-        except ValidationError:
-            for error in ValidationError:
-             print(list(error.path))
+            v = Draft4Validator(json_schema)
+            errors = v.iter_errors(ymal_data)
+            for error in sorted(errors, key=str):
+                logger.info ('in iterated errors')
+                logger.warn (  error.message + ' in ' +
+                "/".join( [ str(element) for element in error.path ] )
+                )
+        except ValidationError as e:
+            logger.info ('in validation error')
+            logger.warn(e.message)
+        except SchemaError as e:
+            logger.error(e)
 
 
     pass
