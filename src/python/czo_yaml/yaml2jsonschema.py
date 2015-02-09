@@ -52,7 +52,7 @@ def main():
 
     subparsers = parser.add_subparsers(help='sub-command help')
 
-    parser_convert = subparsers.add_parser('json', parents=[default_parser])
+    parser_convert = subparsers.add_parser('jsonschema', parents=[default_parser])
     parser_convert.add_argument('json_schema_file_path', type=str, help='json schema file output path')
     parser_convert.set_defaults(func=convert_to_jsonschema)
 
