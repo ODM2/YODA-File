@@ -7,23 +7,31 @@ Dataset:
   DataSetCode: TWDEF_AirTemp
   DataSetTitle: Air temperature at the TW Daniels Experimental Forest Climate Station
   DataSetAbstract: Air temperature at the TW Daniels Experimental Forest Climate Station. The data were measured using a Campbell Scientific HC2S3 temperature and relative humidity sensor. Measurements represent the average over the 15 minute recording period.
-  Citation:
+
+People:
+ - Person: &PersonID001
+     PersonFirstName: Jeffery
+     PersonMiddleName: S.
+     PersonLastName: Horsburgh
+ - Person: &PersonID002
+     PersonFirstName: Amber
+     PersonMiddleName: ""
+     PersonLastName: Spackman Jones
+
+AuthorList:
+  - Author: &AuthorID001
+      AuthorName: *PersonID001
+      AuthorOrder: 1
+  - Author: &AuthorID002
+      AuthorName: *PersonID002
+      AuthorOrder: 2
+
+Citation:
     Title: Air temperature at the TW Daniels Experimental Forest Climate Station
     Publisher: iUTAH Modeling and Data Federation
     PubliationYear: 2015
     CitationLink: http://repository.iutahepscor.org/dataset/iutah-gamut-network-raw-data-at-tw-daniels-forest-climate-site-lr-twdef-c
-    Authors:
-      - Author:
-          PersonFirstName: Jeffery
-          PersonMiddleName: S.
-          PersonLastName: Horsburgh
-          AuthorOrder: 1
-    
-      - Author:
-          PersonFirstName: Amber
-          PersonMiddleName:
-          PersonLastName: Spackman Jones
-          AuthorOrder: 2      
+    Authors: [*AuthorID001, *AuthorID002]
 
 SpatialReferences:
   - SpatialReference: &SRSID001   # Give the SpatialReference an ID
@@ -31,7 +39,6 @@ SpatialReferences:
       SRSCode: EPSG4269
       SRSName: NAD83
       SRSDescription:             # There is no description for this SRS
-      
   - SpatialReference: &SRSID002
       SpatialReferenceID: 340
       SRSCode:                    # Leave this blank
@@ -49,11 +56,13 @@ SamplingFeatures:
       FeatureGeometry:        # {Well known text here????}
       Elevation_m: 2629.2
       ElevationDatumCV: EGM96
-      Site:
-        SiteTypeCV: Atmosphere
-        Latitude: 41.864805
-        Longitude: -111.507494
-        LatLonDatumID: *SRSID001  # Points at the ID for the SpatialReference
+
+Site:
+  SamplingFeatureID: *SamplingFeatureID001
+  SiteTypeCV: Atmosphere
+  Latitude: 41.864805
+  Longitude: -111.507494
+  LatLonDatumID: *SRSID001  # Points at the ID for the SpatialReference
  
 Methods:
   - Method: &MethodID001
@@ -72,7 +81,6 @@ Variables:
       VariableDefinition:           # Leave this blank
       SpeciationCV: Not applicable
       NoDataValue: -9999
-      
   - Variable: &VariableID002
       VariableTypeCV: Climate  
       VariableCode: AirtTemp_Min
@@ -80,7 +88,6 @@ Variables:
       VariableDefinition:           # Leave this blank
       SpeciationCV: Not applicable
       NoDataValue: -9999
-            
   - Variable: &VariableID003
       VariableTypeCV: Climate  
       VariableCode: AirtTemp_Max
@@ -95,13 +102,11 @@ Units:
       UnitsName: Degree celsius
       UnitsTypeCV: Temperature
       UnitsAbbreviation: degC
-      
   - Unit: &UnitID002
       UnitsID: 102  
       UnitsName: Minute
       UnitsTypeCV: Time
       UnitsAbbreviation: min
-      
   - Unit: &UnitID003
       UnitsID: 52  
       UnitsName: Meter
@@ -141,19 +146,7 @@ Results:
       ValidDateTimeUTCOffset:  # Leave this blank
       StatusCV: Data collection ongoing  # This CV hasn't been developed yet.
       SampledMediumCV: Air     # Need to check CV.
-      ValueCount: 38056   
-      TimeSeriesResult:
-        XLocation: 0
-        XLocationUnitsID: *UnitID003
-        YLocation: 0
-        YLocationUnitsID: *UnitID003
-        ZLocation: 2
-        ZLocationUnitsID: *UnitID003
-        SpatialReferenceID: *SRSID002
-        IntendedTimeSpacing: 15
-        IntendedTimeSpacingUnitsID: *UnitID002
-        AggregationStatisticsCV: Average
-
+      ValueCount: 38056
   - Result: &ResultID002
       ResultUUID: "000000000000000000000"
       SamplingFeatureID: *SamplingFeatureID001
@@ -169,19 +162,7 @@ Results:
       ValidDateTimeUTCOffset:  # Leave this blank
       StatusCV: Data collection ongoing  # This CV hasn't been developed yet.
       SampledMediumCV: Air     # Need to check CV.
-      ValueCount: 38056   
-      TimeSeriesResult:
-        XLocation: 0
-        XLocationUnitsID: *UnitID003
-        YLocation: 0
-        YLocationUnitsID: *UnitID003
-        ZLocation: 2
-        ZLocationUnitsID: *UnitID003
-        SpatialReferenceID: *SRSID002
-        IntendedTimeSpacing: 15
-        IntendedTimeSpacingUnitsID: *UnitID002
-        AggregationStatisticsCV: Minimum
-
+      ValueCount: 38056
   - Result: &ResultID003
       ResultUUID: "000000000000000000000"
       SamplingFeatureID: *SamplingFeatureID001
@@ -198,25 +179,52 @@ Results:
       StatusCV: Data collection ongoing  # This CV hasn't been developed yet.
       SampledMediumCV: Air     # Need to check CV.
       ValueCount: 38056   
-      TimeSeriesResult:
-        XLocation: 0
-        XLocationUnitsID: *UnitID003
-        YLocation: 0
-        YLocationUnitsID: *UnitID003
-        ZLocation: 2
-        ZLocationUnitsID: *UnitID003
-        SpatialReferenceID: *SRSID002
-        IntendedTimeSpacing: 15
-        IntendedTimeSpacingUnitsID: *UnitID002
-        AggregationStatisticsCV: Maximum
+
+TimeSeriesResults:
+  - TimeSeriesResult: &TimeSeriesResultID001
+      ResultID: *ResultID001
+      XLocation: 0
+      XLocationUnitsID: *UnitID003
+      YLocation: 0
+      YLocationUnitsID: *UnitID003
+      ZLocation: 2
+      ZLocationUnitsID: *UnitID003
+      SpatialReferenceID: *SRSID002
+      IntendedTimeSpacing: 15
+      IntendedTimeSpacingUnitsID: *UnitID002
+      AggregationStatisticsCV: Average
+  - TimeSeriesResult: &TimeSeriesResultID002
+      ResultID: *ResultID002
+      XLocation: 0
+      XLocationUnitsID: *UnitID003
+      YLocation: 0
+      YLocationUnitsID: *UnitID003
+      ZLocation: 2
+      ZLocationUnitsID: *UnitID003
+      SpatialReferenceID: *SRSID002
+      IntendedTimeSpacing: 15
+      IntendedTimeSpacingUnitsID: *UnitID002
+      AggregationStatisticsCV: Minimum
+  - TimeSeriesResult: &TimeSeriesResultID003
+      ResultID: *ResultID003
+      XLocation: 0
+      XLocationUnitsID: *UnitID003
+      YLocation: 0
+      YLocationUnitsID: *UnitID003
+      ZLocation: 2
+      ZLocationUnitsID: *UnitID003
+      SpatialReferenceID: *SRSID002
+      IntendedTimeSpacing: 15
+      IntendedTimeSpacingUnitsID: *UnitID002
+      AggregationStatisticsCV: Maximum
       
 TimeSeriesResultValues:
   ColumnDefinitions:
     - {ColumnNumber: 1, Label: ValueDateTime}
     - {ColumnNumber: 2, Label: ValueDateTimeUTCOffset}
-    - {ColumnNumber: 3, Label: AirTemp_Avg, Result: *ResultID001}
-    - {ColumnNumber: 4, Label: AirTemp_Min, Result: *ResultID002}
-    - {ColumnNumber: 5, Label: AirTemp_Max, Result: *ResultID003}
+    - {ColumnNumber: 3, Label: AirTemp_Avg, Result: *TimeSeriesResultID001}
+    - {ColumnNumber: 4, Label: AirTemp_Min, Result: *TimeSeriesResultID002}
+    - {ColumnNumber: 5, Label: AirTemp_Max, Result: *TimeSeriesResultID003}
   Data:
   - [ValueDateTime,ValueDateTimeUTCOffset,AirTemp_Avg,AirTemp_Min,AirTemp_Max]
   - ["2015-01-01 00:30:00",-7.0,-9.56,-9.31,-9.87]
