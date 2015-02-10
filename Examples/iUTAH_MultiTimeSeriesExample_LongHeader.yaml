@@ -244,6 +244,7 @@ TimeSeriesResultValues:
   - ["2015-01-01 04:00:00",-7.0,-15.34,-14.95,-15.77]
 
 # RULE:  The ColumnDefinitions will be matched to the columns in the data table using the ColumnNumber. We will check to make sure the labels match, but we need to decide later whether to throw an error if the labels in the ColumnDefinitions do not match the columns in the data table.
+# In the case where a single DataValues column contains multiple time series Results, the reference to the Result has to go in a separate column and not in the ColumnDefinitions.
 # CensorCode, QualityCode, TimeAggregationInterval, and TimeAggregationIntervalUnitsID can be specified as a default for the whole DataValues column in the column definition.
 # Otherwise, a column for each of these attributes must be included in the table and defined in the ColumnDefinitions.
 
