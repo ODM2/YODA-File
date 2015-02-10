@@ -220,11 +220,11 @@ TimeSeriesResults:
       
 TimeSeriesResultValues:
   ColumnDefinitions:
-    - {ColumnNumber: 1, Label: ValueDateTime}
-    - {ColumnNumber: 2, Label: ValueDateTimeUTCOffset}
-    - {ColumnNumber: 3, Label: AirTemp_Avg, Result: *TimeSeriesResultID001}
-    - {ColumnNumber: 4, Label: AirTemp_Min, Result: *TimeSeriesResultID002}
-    - {ColumnNumber: 5, Label: AirTemp_Max, Result: *TimeSeriesResultID003}
+    - {ColumnNumber: 1, Label: ValueDateTime, ODM2Field: ValueDateTime}
+    - {ColumnNumber: 2, Label: ValueDateTimeUTCOffset, ODM2Field: ValueDateTimeUTCOffset}
+    - {ColumnNumber: 3, Label: AirTemp_Avg, Result: *TimeSeriesResultID001, ODM2Field: DataValue, CensorCodeCV: NC, TimeAggregationInterval: 15, TimeAggregationIntervalUnitsID: *UnitID002}
+    - {ColumnNumber: 4, Label: AirTemp_Min, Result: *TimeSeriesResultID002, ODM2Field: DataValue, CensorCodeCV: NC, TimeAggregationInterval: 15, TimeAggregationIntervalUnitsID: *UnitID002}
+    - {ColumnNumber: 5, Label: AirTemp_Max, Result: *TimeSeriesResultID003, ODM2Field: DataValue, CensorCodeCV: NC, TimeAggregationInterval: 15, TimeAggregationIntervalUnitsID: *UnitID002}
   Data:
   - [ValueDateTime,ValueDateTimeUTCOffset,AirTemp_Avg,AirTemp_Min,AirTemp_Max]
   - ["2015-01-01 00:30:00",-7.0,-9.56,-9.31,-9.87]
@@ -243,6 +243,10 @@ TimeSeriesResultValues:
   - ["2015-01-01 03:45:00",-7.0,-15.63,-14.94,-16.36]
   - ["2015-01-01 04:00:00",-7.0,-15.34,-14.95,-15.77]
 
-# How to manage CensorCode, QualityCode, Time AggregationInterval, TimeIntervalUnitesID, and Annotations for each DataValue (there may be multiple Annotations per value)
+# RULE:  The ColumnDefinitions will be matched to the columns in the data table using the ColumnNumber. We will check to make sure the labels match, but we need to decide later whether to throw an error if the labels in the ColumnDefinitions do not match the columns in the data table.
+# CensorCode, QualityCode, TimeAggregationInterval, and TimeAggregationIntervalUnitsID can be specified as a default for the whole DataValues column in the column definition.
+# Otherwise, a column for each of these attributes must be included in the table and defined in the ColumnDefinitions.
+
+# Annotations for each DataValue (there may be multiple Annotations per value)
 
 ...
