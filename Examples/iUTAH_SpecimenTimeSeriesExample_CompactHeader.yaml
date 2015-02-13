@@ -171,7 +171,8 @@ MeasurementResultValues:
 
 # Annotations end up being a little awkward - the full DataValue object (and all of it's associated metadata)
 # is referenced by the *ValueIDxxx reference. It wouldn't be that easy to get a list of Annotations for a
-# particular object
+# particular object.  A better way would be to have references to annotations in the DataValue records in the
+# Data table, but then it would be hard to have multiple annotations for a single DataValue
 MeasurementResultValueAnnotations:
   - {ValueID: *ValueID001, AnnotationTypeCV: MeasurementResultValueAnnotation, AnnotationCode: HT, AnnotationText: Sample holding time exceeded., AnnotationDateTime: "", AnnotationUTCOffset: "", AnnotationLink: "", AnnotatorID: *PersonID004, CitationID: ""}
   - {ValueID: *ValueID001, AnnotationTypeCV: MeasurementResultValueAnnotation, AnnotationCode: Suspect, AnnotationText: Suspect data value. Use with caution., AnnotationDateTime: "", AnnotationUTCOffset: "", AnnotationLink: "", AnnotatorID: *PersonID004, CitationID: ""}
