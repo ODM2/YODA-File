@@ -1,5 +1,10 @@
+# TODO:  Need to check all of the values in the CV fields to make sure they use valid values
+# TODO:  Need to find out what the convention is for empty elements in YAML and fix throughout
+# TODO:  Make sure all required elements are specified
+# TODO:  Where objects are referenced by referencing an anchor, what should the element name be (e.g., "Action" or "ActionID"?)
+
 ---
-CZO Display File: {Version: 2.0.0, Profile: HydroTimeSeries}
+YODA: {Version: 1.0.0, Profile: TimeSeries}
 
 Dataset:
   DataSetUUID: "000000000000000000000"
