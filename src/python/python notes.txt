@@ -1,0 +1,21 @@
+YAML:
+
+
+
+CSV:
+Example reader of excel and CSV:
+http://docs.python-tablib.org/en/latest/
+
+excel into csv and yaml:
+http://code.activestate.com/recipes/546518-simple-conversion-of-excel-files-into-csv-and-yaml/
+
+---
+Notes on Datatypes for Times (dv).
+DateTime is a format of string. so it is generally treated as a string. http://spacetelescope.github.io/understanding-json-schema/reference/string.html
+	I change the array to use:
+- [!!timestamp "2015-01-01T00:30:00.9Z",-7.0,-9.56,-9.31,-9.87]
+This will round trip in YAML. Json output breaks, we would need to write an overload class.
+
+Metaclasses (aka overriding default properties)
+- [ValueDateTime,ValueDateTimeUTCOffset,AirTemp_Avg,AirTemp_Min,AirTemp_Max, properties]
+- ["2015-01-01 00:30:00",-7.0,-9.56,-9.31,-9.87, {'processing_level': '1', 'offset':'0001'}]

@@ -1,0 +1,1402 @@
+{
+    "required": [
+        "Actions", 
+        "CZO Display File", 
+        "Dataset", 
+        "Methods", 
+        "ProcessingLevels", 
+        "Results", 
+        "SamplingFeatures", 
+        "Sites", 
+        "SpatialReferences", 
+        "TimeSeriesResultValues", 
+        "TimeSeriesResults", 
+        "Units", 
+        "Variables"
+    ], 
+    "type": "object", 
+    "properties": {
+        "ProcessingLevels": {
+            "items": [
+                {
+                    "required": [
+                        "Definition", 
+                        "Explanation", 
+                        "ProcessingLevelCode"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "Definition": {
+                            "type": "string"
+                        }, 
+                        "Explanation": {
+                            "type": "string"
+                        }, 
+                        "ProcessingLevelCode": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "TimeSeriesResults": {
+            "items": [
+                {
+                    "required": [
+                        "IntendedTimeSpacing", 
+                        "IntendedTimeSpacingUnitsID", 
+                        "ResultID", 
+                        "SpatialReferenceID", 
+                        "XLocation", 
+                        "XLocationUnitsID", 
+                        "YLocation", 
+                        "YLocationUnitsID", 
+                        "ZLocation", 
+                        "ZLocationUnitsID"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "IntendedTimeSpacingUnitsID": {
+                            "required": [
+                                "UnitsAbbreviation", 
+                                "UnitsID", 
+                                "UnitsName", 
+                                "UnitsTypeCV"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "UnitsAbbreviation": {
+                                    "type": "string"
+                                }, 
+                                "UnitsID": {
+                                    "type": "integer"
+                                }, 
+                                "UnitsName": {
+                                    "type": "string"
+                                }, 
+                                "UnitsTypeCV": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "IntendedTimeSpacing": {
+                            "type": "integer"
+                        }, 
+                        "XLocation": {
+                            "type": "integer"
+                        }, 
+                        "XLocationUnitsID": {
+                            "required": [
+                                "UnitsAbbreviation", 
+                                "UnitsID", 
+                                "UnitsName", 
+                                "UnitsTypeCV"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "UnitsAbbreviation": {
+                                    "type": "string"
+                                }, 
+                                "UnitsID": {
+                                    "type": "integer"
+                                }, 
+                                "UnitsName": {
+                                    "type": "string"
+                                }, 
+                                "UnitsTypeCV": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ZLocation": {
+                            "type": "integer"
+                        }, 
+                        "YLocation": {
+                            "type": "integer"
+                        }, 
+                        "AggregationStatisticsCV": {
+                            "type": "string"
+                        }, 
+                        "AggregationStatisticCV": {
+                            "type": "string"
+                        }, 
+                        "YLocationUnitsID": {
+                            "required": [
+                                "UnitsAbbreviation", 
+                                "UnitsID", 
+                                "UnitsName", 
+                                "UnitsTypeCV"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "UnitsAbbreviation": {
+                                    "type": "string"
+                                }, 
+                                "UnitsID": {
+                                    "type": "integer"
+                                }, 
+                                "UnitsName": {
+                                    "type": "string"
+                                }, 
+                                "UnitsTypeCV": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ZLocationUnitsID": {
+                            "required": [
+                                "UnitsAbbreviation", 
+                                "UnitsID", 
+                                "UnitsName", 
+                                "UnitsTypeCV"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "UnitsAbbreviation": {
+                                    "type": "string"
+                                }, 
+                                "UnitsID": {
+                                    "type": "integer"
+                                }, 
+                                "UnitsName": {
+                                    "type": "string"
+                                }, 
+                                "UnitsTypeCV": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ResultID": {
+                            "required": [
+                                "ActionID", 
+                                "ProcessingLevelID", 
+                                "ResultDateTime", 
+                                "ResultDateTimeUTCOffset", 
+                                "ResultTypeCV", 
+                                "ResultUUID", 
+                                "SampledMediumCV", 
+                                "SamplingFeatureID", 
+                                "StatusCV", 
+                                "TaxonomicClassifierID", 
+                                "UnitsID", 
+                                "ValidDateTime", 
+                                "ValidDateTimeUTCOffset", 
+                                "ValueCount", 
+                                "VariableID"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "ResultUUID": {
+                                    "type": "string"
+                                }, 
+                                "ResultDateTimeUTCOffset": {
+                                    "type": "number"
+                                }, 
+                                "ValidDateTimeUTCOffset": {
+                                    "type": "string"
+                                }, 
+                                "VariableID": {
+                                    "required": [
+                                        "NoDataValue", 
+                                        "SpeciationCV", 
+                                        "VariableCode", 
+                                        "VariableDefinition", 
+                                        "VariableNameCV", 
+                                        "VariableTypeCV"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "SpeciationCV": {
+                                            "type": "string"
+                                        }, 
+                                        "VariableNameCV": {
+                                            "type": "string"
+                                        }, 
+                                        "VariableDefinition": {
+                                            "type": "string"
+                                        }, 
+                                        "NoDataValue": {
+                                            "type": "integer"
+                                        }, 
+                                        "VariableTypeCV": {
+                                            "type": "string"
+                                        }, 
+                                        "VariableCode": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }, 
+                                "ProcessingLevelID": {
+                                    "required": [
+                                        "Definition", 
+                                        "Explanation", 
+                                        "ProcessingLevelCode"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "Definition": {
+                                            "type": "string"
+                                        }, 
+                                        "Explanation": {
+                                            "type": "string"
+                                        }, 
+                                        "ProcessingLevelCode": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }, 
+                                "ResultTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "StatusCV": {
+                                    "type": "string"
+                                }, 
+                                "SampledMediumCV": {
+                                    "type": "string"
+                                }, 
+                                "ValueCount": {
+                                    "type": "integer"
+                                }, 
+                                "ActionID": {
+                                    "required": [
+                                        "ActionDescription", 
+                                        "ActionFileLink", 
+                                        "ActionTypeCV", 
+                                        "BeginDateTime", 
+                                        "BeginDateTimeUTCOffset", 
+                                        "EndDateTime", 
+                                        "EndDateTimeUTCOffset", 
+                                        "MethodID"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "MethodID": {
+                                            "required": [
+                                                "MethodCode", 
+                                                "MethodDescription", 
+                                                "MethodLink", 
+                                                "MethodName", 
+                                                "MethodTypeCV", 
+                                                "OrganizationID"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "MethodCode": {
+                                                    "type": "string"
+                                                }, 
+                                                "MethodName": {
+                                                    "type": "string"
+                                                }, 
+                                                "MethodDescription": {
+                                                    "type": "string"
+                                                }, 
+                                                "OrganizationID": {
+                                                    "type": "string"
+                                                }, 
+                                                "MethodTypeCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "MethodLink": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }, 
+                                        "ActionDescription": {
+                                            "type": "string"
+                                        }, 
+                                        "ActionFileLink": {
+                                            "type": "string"
+                                        }, 
+                                        "EndDateTime": {
+                                            "type": "string"
+                                        }, 
+                                        "BeginDateTime": {
+                                            "type": "string"
+                                        }, 
+                                        "EndDateTimeUTCOffset": {
+                                            "type": "number"
+                                        }, 
+                                        "ActionTypeCV": {
+                                            "type": "string"
+                                        }, 
+                                        "BeginDateTimeUTCOffset": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }, 
+                                "SamplingFeatureID": {
+                                    "required": [
+                                        "ElevationDatumCV", 
+                                        "Elevation_m", 
+                                        "FeatureGeometry", 
+                                        "SamplingFeatureCode", 
+                                        "SamplingFeatureDescription", 
+                                        "SamplingFeatureGeoTypeCV", 
+                                        "SamplingFeatureName", 
+                                        "SamplingFeatureTypeCV", 
+                                        "SamplingFeatureUUID"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "SamplingFeatureDescription": {
+                                            "type": "string"
+                                        }, 
+                                        "SamplingFeatureGeoTypeCV": {
+                                            "type": "string"
+                                        }, 
+                                        "SamplingFeatureName": {
+                                            "type": "string"
+                                        }, 
+                                        "ElevationDatumCV": {
+                                            "type": "string"
+                                        }, 
+                                        "Elevation_m": {
+                                            "type": "number"
+                                        }, 
+                                        "SamplingFeatureUUID": {
+                                            "type": "string"
+                                        }, 
+                                        "SamplingFeatureTypeCV": {
+                                            "type": "string"
+                                        }, 
+                                        "SamplingFeatureCode": {
+                                            "type": "string"
+                                        }, 
+                                        "FeatureGeometry": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }, 
+                                "ValidDateTime": {
+                                    "type": "string"
+                                }, 
+                                "UnitsID": {
+                                    "required": [
+                                        "UnitsAbbreviation", 
+                                        "UnitsID", 
+                                        "UnitsName", 
+                                        "UnitsTypeCV"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "UnitsAbbreviation": {
+                                            "type": "string"
+                                        }, 
+                                        "UnitsID": {
+                                            "type": "integer"
+                                        }, 
+                                        "UnitsName": {
+                                            "type": "string"
+                                        }, 
+                                        "UnitsTypeCV": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }, 
+                                "ResultDateTime": {
+                                    "type": "string"
+                                }, 
+                                "TaxonomicClassifierID": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "SpatialReferenceID": {
+                            "required": [
+                                "SRSCode", 
+                                "SRSDescription", 
+                                "SRSName", 
+                                "SpatialReferenceID"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "SRSName": {
+                                    "type": "string"
+                                }, 
+                                "SpatialReferenceID": {
+                                    "type": "integer"
+                                }, 
+                                "SRSCode": {
+                                    "type": "string"
+                                }, 
+                                "SRSDescription": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "Methods": {
+            "items": [
+                {
+                    "required": [
+                        "MethodCode", 
+                        "MethodDescription", 
+                        "MethodLink", 
+                        "MethodName", 
+                        "MethodTypeCV", 
+                        "OrganizationID"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "MethodCode": {
+                            "type": "string"
+                        }, 
+                        "MethodName": {
+                            "type": "string"
+                        }, 
+                        "MethodDescription": {
+                            "type": "string"
+                        }, 
+                        "OrganizationID": {
+                            "type": "string"
+                        }, 
+                        "MethodTypeCV": {
+                            "type": "string"
+                        }, 
+                        "MethodLink": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "Variables": {
+            "items": [
+                {
+                    "required": [
+                        "NoDataValue", 
+                        "SpeciationCV", 
+                        "VariableCode", 
+                        "VariableDefinition", 
+                        "VariableNameCV", 
+                        "VariableTypeCV"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "SpeciationCV": {
+                            "type": "string"
+                        }, 
+                        "VariableNameCV": {
+                            "type": "string"
+                        }, 
+                        "VariableDefinition": {
+                            "type": "string"
+                        }, 
+                        "NoDataValue": {
+                            "type": "integer"
+                        }, 
+                        "VariableTypeCV": {
+                            "type": "string"
+                        }, 
+                        "VariableCode": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "Sites": {
+            "items": [
+                {
+                    "required": [
+                        "LatLonDatumID", 
+                        "Latitude", 
+                        "Longitude", 
+                        "SamplingFeatureID", 
+                        "SiteTypeCV"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "Latitude": {
+                            "type": "number"
+                        }, 
+                        "SamplingFeatureID": {
+                            "required": [
+                                "ElevationDatumCV", 
+                                "Elevation_m", 
+                                "FeatureGeometry", 
+                                "SamplingFeatureCode", 
+                                "SamplingFeatureDescription", 
+                                "SamplingFeatureGeoTypeCV", 
+                                "SamplingFeatureName", 
+                                "SamplingFeatureTypeCV", 
+                                "SamplingFeatureUUID"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "SamplingFeatureDescription": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureGeoTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureName": {
+                                    "type": "string"
+                                }, 
+                                "ElevationDatumCV": {
+                                    "type": "string"
+                                }, 
+                                "Elevation_m": {
+                                    "type": "number"
+                                }, 
+                                "SamplingFeatureUUID": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureCode": {
+                                    "type": "string"
+                                }, 
+                                "FeatureGeometry": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "SiteTypeCV": {
+                            "type": "string"
+                        }, 
+                        "Longitude": {
+                            "type": "number"
+                        }, 
+                        "LatLonDatumID": {
+                            "required": [
+                                "SRSCode", 
+                                "SRSDescription", 
+                                "SRSName", 
+                                "SpatialReferenceID"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "SRSName": {
+                                    "type": "string"
+                                }, 
+                                "SpatialReferenceID": {
+                                    "type": "integer"
+                                }, 
+                                "SRSCode": {
+                                    "type": "string"
+                                }, 
+                                "SRSDescription": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "SamplingFeatures": {
+            "items": [
+                {
+                    "required": [
+                        "ElevationDatumCV", 
+                        "Elevation_m", 
+                        "FeatureGeometry", 
+                        "SamplingFeatureCode", 
+                        "SamplingFeatureDescription", 
+                        "SamplingFeatureGeoTypeCV", 
+                        "SamplingFeatureName", 
+                        "SamplingFeatureTypeCV", 
+                        "SamplingFeatureUUID"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "SamplingFeatureDescription": {
+                            "type": "string"
+                        }, 
+                        "SamplingFeatureGeoTypeCV": {
+                            "type": "string"
+                        }, 
+                        "SamplingFeatureName": {
+                            "type": "string"
+                        }, 
+                        "ElevationDatumCV": {
+                            "type": "string"
+                        }, 
+                        "Elevation_m": {
+                            "type": "number"
+                        }, 
+                        "SamplingFeatureUUID": {
+                            "type": "string"
+                        }, 
+                        "SamplingFeatureTypeCV": {
+                            "type": "string"
+                        }, 
+                        "SamplingFeatureCode": {
+                            "type": "string"
+                        }, 
+                        "FeatureGeometry": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "Dataset": {
+            "required": [
+                "Citation", 
+                "DataSetAbstract", 
+                "DataSetCode", 
+                "DataSetTitle", 
+                "DataSetTypeCV", 
+                "DataSetUUID"
+            ], 
+            "type": "object", 
+            "properties": {
+                "DataSetTypeCV": {
+                    "type": "string"
+                }, 
+                "DataSetAbstract": {
+                    "type": "string"
+                }, 
+                "Citation": {
+                    "required": [
+                        "Authors", 
+                        "CitationLink", 
+                        "PubliationYear", 
+                        "Publisher", 
+                        "Title"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "Title": {
+                            "type": "string"
+                        }, 
+                        "Publisher": {
+                            "type": "string"
+                        }, 
+                        "PubliationYear": {
+                            "type": "integer"
+                        }, 
+                        "CitationLink": {
+                            "type": "string"
+                        }, 
+                        "Authors": {
+                            "items": [
+                                {
+                                    "required": [
+                                        "AuthorOrder", 
+                                        "PersonFirstName", 
+                                        "PersonLastName", 
+                                        "PersonMiddleName"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "PersonLastName": {
+                                            "type": "string"
+                                        }, 
+                                        "PersonFirstName": {
+                                            "type": "string"
+                                        }, 
+                                        "AuthorOrder": {
+                                            "type": "integer"
+                                        }, 
+                                        "PersonMiddleName": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            ], 
+                            "type": "array"
+                        }
+                    }
+                }, 
+                "DataSetUUID": {
+                    "type": "string"
+                }, 
+                "DataSetCode": {
+                    "type": "string"
+                }, 
+                "DataSetTitle": {
+                    "type": "string"
+                }
+            }
+        }, 
+        "Actions": {
+            "items": [
+                {
+                    "required": [
+                        "ActionDescription", 
+                        "ActionFileLink", 
+                        "ActionTypeCV", 
+                        "BeginDateTime", 
+                        "BeginDateTimeUTCOffset", 
+                        "EndDateTime", 
+                        "EndDateTimeUTCOffset", 
+                        "MethodID"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "MethodID": {
+                            "required": [
+                                "MethodCode", 
+                                "MethodDescription", 
+                                "MethodLink", 
+                                "MethodName", 
+                                "MethodTypeCV", 
+                                "OrganizationID"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "MethodCode": {
+                                    "type": "string"
+                                }, 
+                                "MethodName": {
+                                    "type": "string"
+                                }, 
+                                "MethodDescription": {
+                                    "type": "string"
+                                }, 
+                                "OrganizationID": {
+                                    "type": "string"
+                                }, 
+                                "MethodTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "MethodLink": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ActionDescription": {
+                            "type": "string"
+                        }, 
+                        "ActionFileLink": {
+                            "type": "string"
+                        }, 
+                        "EndDateTime": {
+                            "type": "string"
+                        }, 
+                        "BeginDateTime": {
+                            "type": "string"
+                        }, 
+                        "EndDateTimeUTCOffset": {
+                            "type": "number"
+                        }, 
+                        "ActionTypeCV": {
+                            "type": "string"
+                        }, 
+                        "BeginDateTimeUTCOffset": {
+                            "type": "number"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "TimeSeriesResultValues": {
+            "required": [
+                "ColumnDefinitions", 
+                "Data"
+            ], 
+            "type": "object", 
+            "properties": {
+                "ColumnDefinitions": {
+                    "items": [
+                        {
+                            "required": [
+                                "ColumnNumber", 
+                                "Label"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "ColumnNumber": {
+                                    "type": "integer"
+                                }, 
+                                "Result": {
+                                    "required": [
+                                        "ActionID", 
+                                        "ProcessingLevelID", 
+                                        "ResultDateTime", 
+                                        "ResultDateTimeUTCOffset", 
+                                        "ResultTypeCV", 
+                                        "ResultUUID", 
+                                        "SampledMediumCV", 
+                                        "SamplingFeatureID", 
+                                        "StatusCV", 
+                                        "TaxonomicClassifierID", 
+                                        "UnitsID", 
+                                        "ValidDateTime", 
+                                        "ValidDateTimeUTCOffset", 
+                                        "ValueCount", 
+                                        "VariableID"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "ResultUUID": {
+                                            "type": "string"
+                                        }, 
+                                        "ResultDateTimeUTCOffset": {
+                                            "type": "number"
+                                        }, 
+                                        "ValidDateTimeUTCOffset": {
+                                            "type": "string"
+                                        }, 
+                                        "VariableID": {
+                                            "required": [
+                                                "NoDataValue", 
+                                                "SpeciationCV", 
+                                                "VariableCode", 
+                                                "VariableDefinition", 
+                                                "VariableNameCV", 
+                                                "VariableTypeCV"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "SpeciationCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "VariableNameCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "VariableDefinition": {
+                                                    "type": "string"
+                                                }, 
+                                                "NoDataValue": {
+                                                    "type": "integer"
+                                                }, 
+                                                "VariableTypeCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "VariableCode": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }, 
+                                        "ProcessingLevelID": {
+                                            "required": [
+                                                "Definition", 
+                                                "Explanation", 
+                                                "ProcessingLevelCode"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "Definition": {
+                                                    "type": "string"
+                                                }, 
+                                                "Explanation": {
+                                                    "type": "string"
+                                                }, 
+                                                "ProcessingLevelCode": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }, 
+                                        "ResultTypeCV": {
+                                            "type": "string"
+                                        }, 
+                                        "StatusCV": {
+                                            "type": "string"
+                                        }, 
+                                        "SampledMediumCV": {
+                                            "type": "string"
+                                        }, 
+                                        "ValueCount": {
+                                            "type": "integer"
+                                        }, 
+                                        "ActionID": {
+                                            "required": [
+                                                "ActionDescription", 
+                                                "ActionFileLink", 
+                                                "ActionTypeCV", 
+                                                "BeginDateTime", 
+                                                "BeginDateTimeUTCOffset", 
+                                                "EndDateTime", 
+                                                "EndDateTimeUTCOffset", 
+                                                "MethodID"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "MethodID": {
+                                                    "required": [
+                                                        "MethodCode", 
+                                                        "MethodDescription", 
+                                                        "MethodLink", 
+                                                        "MethodName", 
+                                                        "MethodTypeCV", 
+                                                        "OrganizationID"
+                                                    ], 
+                                                    "type": "object", 
+                                                    "properties": {
+                                                        "MethodCode": {
+                                                            "type": "string"
+                                                        }, 
+                                                        "MethodName": {
+                                                            "type": "string"
+                                                        }, 
+                                                        "MethodDescription": {
+                                                            "type": "string"
+                                                        }, 
+                                                        "OrganizationID": {
+                                                            "type": "string"
+                                                        }, 
+                                                        "MethodTypeCV": {
+                                                            "type": "string"
+                                                        }, 
+                                                        "MethodLink": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }, 
+                                                "ActionDescription": {
+                                                    "type": "string"
+                                                }, 
+                                                "ActionFileLink": {
+                                                    "type": "string"
+                                                }, 
+                                                "EndDateTime": {
+                                                    "type": "string"
+                                                }, 
+                                                "BeginDateTime": {
+                                                    "type": "string"
+                                                }, 
+                                                "EndDateTimeUTCOffset": {
+                                                    "type": "number"
+                                                }, 
+                                                "ActionTypeCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "BeginDateTimeUTCOffset": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        }, 
+                                        "SamplingFeatureID": {
+                                            "required": [
+                                                "ElevationDatumCV", 
+                                                "Elevation_m", 
+                                                "FeatureGeometry", 
+                                                "SamplingFeatureCode", 
+                                                "SamplingFeatureDescription", 
+                                                "SamplingFeatureGeoTypeCV", 
+                                                "SamplingFeatureName", 
+                                                "SamplingFeatureTypeCV", 
+                                                "SamplingFeatureUUID"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "SamplingFeatureDescription": {
+                                                    "type": "string"
+                                                }, 
+                                                "SamplingFeatureGeoTypeCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "SamplingFeatureName": {
+                                                    "type": "string"
+                                                }, 
+                                                "ElevationDatumCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "Elevation_m": {
+                                                    "type": "number"
+                                                }, 
+                                                "SamplingFeatureUUID": {
+                                                    "type": "string"
+                                                }, 
+                                                "SamplingFeatureTypeCV": {
+                                                    "type": "string"
+                                                }, 
+                                                "SamplingFeatureCode": {
+                                                    "type": "string"
+                                                }, 
+                                                "FeatureGeometry": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }, 
+                                        "ValidDateTime": {
+                                            "type": "string"
+                                        }, 
+                                        "UnitsID": {
+                                            "required": [
+                                                "UnitsAbbreviation", 
+                                                "UnitsID", 
+                                                "UnitsName", 
+                                                "UnitsTypeCV"
+                                            ], 
+                                            "type": "object", 
+                                            "properties": {
+                                                "UnitsAbbreviation": {
+                                                    "type": "string"
+                                                }, 
+                                                "UnitsID": {
+                                                    "type": "integer"
+                                                }, 
+                                                "UnitsName": {
+                                                    "type": "string"
+                                                }, 
+                                                "UnitsTypeCV": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }, 
+                                        "ResultDateTime": {
+                                            "type": "string"
+                                        }, 
+                                        "TaxonomicClassifierID": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }, 
+                                "Label": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    ], 
+                    "type": "array"
+                }, 
+                "Data": {
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "required": [
+                                        "offset", 
+                                        "processing_level"
+                                    ], 
+                                    "type": [
+                                        "number", 
+                                        "object", 
+                                        "string"
+                                    ], 
+                                    "properties": {
+                                        "processing_level": {
+                                            "type": "string"
+                                        }, 
+                                        "offset": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            ], 
+                            "type": "array"
+                        }
+                    ], 
+                    "type": "array"
+                }
+            }
+        }, 
+        "Units": {
+            "items": [
+                {
+                    "required": [
+                        "UnitsAbbreviation", 
+                        "UnitsID", 
+                        "UnitsName", 
+                        "UnitsTypeCV"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "UnitsAbbreviation": {
+                            "type": "string"
+                        }, 
+                        "UnitsID": {
+                            "type": "integer"
+                        }, 
+                        "UnitsName": {
+                            "type": "string"
+                        }, 
+                        "UnitsTypeCV": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "Results": {
+            "items": [
+                {
+                    "required": [
+                        "ActionID", 
+                        "ProcessingLevelID", 
+                        "ResultDateTime", 
+                        "ResultDateTimeUTCOffset", 
+                        "ResultTypeCV", 
+                        "ResultUUID", 
+                        "SampledMediumCV", 
+                        "SamplingFeatureID", 
+                        "StatusCV", 
+                        "TaxonomicClassifierID", 
+                        "UnitsID", 
+                        "ValidDateTime", 
+                        "ValidDateTimeUTCOffset", 
+                        "ValueCount", 
+                        "VariableID"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "ResultUUID": {
+                            "type": "string"
+                        }, 
+                        "ResultDateTimeUTCOffset": {
+                            "type": "number"
+                        }, 
+                        "ValidDateTimeUTCOffset": {
+                            "type": "string"
+                        }, 
+                        "VariableID": {
+                            "required": [
+                                "NoDataValue", 
+                                "SpeciationCV", 
+                                "VariableCode", 
+                                "VariableDefinition", 
+                                "VariableNameCV", 
+                                "VariableTypeCV"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "SpeciationCV": {
+                                    "type": "string"
+                                }, 
+                                "VariableNameCV": {
+                                    "type": "string"
+                                }, 
+                                "VariableDefinition": {
+                                    "type": "string"
+                                }, 
+                                "NoDataValue": {
+                                    "type": "integer"
+                                }, 
+                                "VariableTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "VariableCode": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ProcessingLevelID": {
+                            "required": [
+                                "Definition", 
+                                "Explanation", 
+                                "ProcessingLevelCode"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "Definition": {
+                                    "type": "string"
+                                }, 
+                                "Explanation": {
+                                    "type": "string"
+                                }, 
+                                "ProcessingLevelCode": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ResultTypeCV": {
+                            "type": "string"
+                        }, 
+                        "StatusCV": {
+                            "type": "string"
+                        }, 
+                        "SampledMediumCV": {
+                            "type": "string"
+                        }, 
+                        "ValueCount": {
+                            "type": "integer"
+                        }, 
+                        "ActionID": {
+                            "required": [
+                                "ActionDescription", 
+                                "ActionFileLink", 
+                                "ActionTypeCV", 
+                                "BeginDateTime", 
+                                "BeginDateTimeUTCOffset", 
+                                "EndDateTime", 
+                                "EndDateTimeUTCOffset", 
+                                "MethodID"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "MethodID": {
+                                    "required": [
+                                        "MethodCode", 
+                                        "MethodDescription", 
+                                        "MethodLink", 
+                                        "MethodName", 
+                                        "MethodTypeCV", 
+                                        "OrganizationID"
+                                    ], 
+                                    "type": "object", 
+                                    "properties": {
+                                        "MethodCode": {
+                                            "type": "string"
+                                        }, 
+                                        "MethodName": {
+                                            "type": "string"
+                                        }, 
+                                        "MethodDescription": {
+                                            "type": "string"
+                                        }, 
+                                        "OrganizationID": {
+                                            "type": "string"
+                                        }, 
+                                        "MethodTypeCV": {
+                                            "type": "string"
+                                        }, 
+                                        "MethodLink": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }, 
+                                "ActionDescription": {
+                                    "type": "string"
+                                }, 
+                                "ActionFileLink": {
+                                    "type": "string"
+                                }, 
+                                "EndDateTime": {
+                                    "type": "string"
+                                }, 
+                                "BeginDateTime": {
+                                    "type": "string"
+                                }, 
+                                "EndDateTimeUTCOffset": {
+                                    "type": "number"
+                                }, 
+                                "ActionTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "BeginDateTimeUTCOffset": {
+                                    "type": "number"
+                                }
+                            }
+                        }, 
+                        "SamplingFeatureID": {
+                            "required": [
+                                "ElevationDatumCV", 
+                                "Elevation_m", 
+                                "FeatureGeometry", 
+                                "SamplingFeatureCode", 
+                                "SamplingFeatureDescription", 
+                                "SamplingFeatureGeoTypeCV", 
+                                "SamplingFeatureName", 
+                                "SamplingFeatureTypeCV", 
+                                "SamplingFeatureUUID"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "SamplingFeatureDescription": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureGeoTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureName": {
+                                    "type": "string"
+                                }, 
+                                "ElevationDatumCV": {
+                                    "type": "string"
+                                }, 
+                                "Elevation_m": {
+                                    "type": "number"
+                                }, 
+                                "SamplingFeatureUUID": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureTypeCV": {
+                                    "type": "string"
+                                }, 
+                                "SamplingFeatureCode": {
+                                    "type": "string"
+                                }, 
+                                "FeatureGeometry": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ValidDateTime": {
+                            "type": "string"
+                        }, 
+                        "UnitsID": {
+                            "required": [
+                                "UnitsAbbreviation", 
+                                "UnitsID", 
+                                "UnitsName", 
+                                "UnitsTypeCV"
+                            ], 
+                            "type": "object", 
+                            "properties": {
+                                "UnitsAbbreviation": {
+                                    "type": "string"
+                                }, 
+                                "UnitsID": {
+                                    "type": "integer"
+                                }, 
+                                "UnitsName": {
+                                    "type": "string"
+                                }, 
+                                "UnitsTypeCV": {
+                                    "type": "string"
+                                }
+                            }
+                        }, 
+                        "ResultDateTime": {
+                            "type": "string"
+                        }, 
+                        "TaxonomicClassifierID": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }, 
+        "CZO Display File": {
+            "required": [
+                "Profile", 
+                "Version"
+            ], 
+            "type": "object", 
+            "properties": {
+                "Profile": {
+                    "type": "string"
+                }, 
+                "Version": {
+                    "type": "string"
+                }
+            }
+        }, 
+        "SpatialReferences": {
+            "items": [
+                {
+                    "required": [
+                        "SRSCode", 
+                        "SRSDescription", 
+                        "SRSName", 
+                        "SpatialReferenceID"
+                    ], 
+                    "type": "object", 
+                    "properties": {
+                        "SRSName": {
+                            "type": "string"
+                        }, 
+                        "SpatialReferenceID": {
+                            "type": "integer"
+                        }, 
+                        "SRSCode": {
+                            "type": "string"
+                        }, 
+                        "SRSDescription": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ], 
+            "type": "array"
+        }
+    }
+}
