@@ -52,7 +52,7 @@
 	"Observation_TableColumn_Attributes": {{
 	    "ColumnNumber": 1, "ODM2_FieldName": "SamplingFeatureCode"},{
     	"ColumnNumber": 2, "ODM2_FieldName":"ResultDateTime", "format": "yyyyMMdd H:mm"},{
-    	"ColumnNumber": 3, "ODM2_FieldName":"VariableCode", "units": "m"},{
+    	"ColumnNumber": 3, "ODM2_FieldName":"VariableNameCV", "units": "m"},{
     	"ColumnNumber": 4, "ODM2_FieldName":"MethodCode"}},
 	"Observation_TableColumn_Labels": [
 	    "SamplingFeatureCode", "ResultDateTime", "Water level", "MethodCode"]
