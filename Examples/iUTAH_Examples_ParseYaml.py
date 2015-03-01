@@ -1,12 +1,15 @@
 import yaml
 
-longHeaderStream = file('iUTAH_MultiTimeSeriesExample_LongHeader.yaml', 'r')
-longHeaderObject = yaml.load(longHeaderStream)
+multiTimeSeriesLongHeaderStream = file('iUTAH_MultiTimeSeriesExample_LongHeader.yaml', 'r')
+multiTImeSeriesLongHeaderObject = yaml.load(multiTimeSeriesLongHeaderStream)
 
-compactHeaderStream = file('iUTAH_MultiTimeSeriesExample_CompactHeader.yaml', 'r')
-compactHeaderObject = yaml.load(compactHeaderStream)
+multiTimeSeriesCompactHeaderStream = file('iUTAH_MultiTimeSeriesExample_CompactHeader.yaml', 'r')
+multiTimeSeriesCompactHeaderObject = yaml.load(multiTimeSeriesCompactHeaderStream)
 
-nestedTableStream = file('iUTAH_SpecimenTimeSeriesExample_CompactHeader.yaml', 'r')
-nestedTableObject = yaml.load(nestedTableStream)
+multiTimeSeriesCompactHeaderNestedTableStream = file('iUTAH_MultiTimeSeriesExample_CompactHeader_NestedTable.yaml', 'r')
+multiTimeSeriesCompactHeaderNestedTableObject = yaml.load(multiTimeSeriesCompactHeaderNestedTableStream)
 
-print yaml.dump(nestedTableObject)
+specimenTimeSeriesStream = file('iUTAH_SpecimenTimeSeriesExample_CompactHeader.yaml', 'r')
+specimenTimeSeriesObject = yaml.load(specimenTimeSeriesStream)
+
+print yaml.dump(specimenTimeSeriesObject)
