@@ -20,19 +20,19 @@ People:
   - &PersonID005 {PersonFirstName: Lisa, PersonMiddleName: NULL, PersonLastName: Ward}
 
 Organizations:
-  - &OrganizationID001 {OrganizationTypeCV: University, OrganizationCode: USU, OrganizationName: Utah State University, OrganizationDescription: , OrganizationLink: "http://www.usu.edu", ParentOrganizationID: }
-  - &OrganizationID002 {OrganizationTypeCV: University, OrganizationCode: UU, OrganizationName: University of Utah, OrganizationDescription: , OrganizationLink: "http://www.utah.edu", ParentOrganizationID: }
-  - &OrganizationID003 {OrganizationTypeCV: University, OrganizationCode: BYU, OrganizationName: Brigham Young University, OrganizationDescription: , OrganizationLink: "http://www.byu.edu", ParentOrganizationID: }
-  - &OrganizationID004 {OrganizationTypeCV: Analytical laboratory, OrganizationCode: USU_Baker_Lab, OrganizationName: USU Aquatic Biogeochemistry Laboratory, OrganizationDescription: , OrganizationLink: "http://canoeecology.weebly.com/lab-services.html", ParentOrganizationID: *OrganizationID001}
-  - &OrganizationID005 {OrganizationTypeCV: Analytical laboratory, OrganizationCode: BYU_Aanderud_Lab, OrganizationName: BYU Aanderud Lab, OrganizationDescription: , OrganizationLink: , ParentOrganizationID: *OrganizationID003}
-  - &OrganizationID006 {OrganizationTypeCV: Analytical laboratory, OrganizationCode: UU_SIRFER, OrganizationName: University of Utah SIRFER Lab, OrganizationDescription: , OrganizationLink: , ParentOrganizationID: *OrganizationID002}
+  - &OrganizationID001 {OrganizationTypeCV: University, OrganizationCode: USU, OrganizationName: Utah State University, OrganizationDescription: NULL, OrganizationLink: "http://www.usu.edu", ParentOrganizationID: NULL}
+  - &OrganizationID002 {OrganizationTypeCV: University, OrganizationCode: UU, OrganizationName: University of Utah, OrganizationDescription: NULL, OrganizationLink: "http://www.utah.edu", ParentOrganizationID: NULL}
+  - &OrganizationID003 {OrganizationTypeCV: University, OrganizationCode: BYU, OrganizationName: Brigham Young University, OrganizationDescription: NULL, OrganizationLink: "http://www.byu.edu", ParentOrganizationID: NULL}
+  - &OrganizationID004 {OrganizationTypeCV: Analytical laboratory, OrganizationCode: USU_Baker_Lab, OrganizationName: USU Aquatic Biogeochemistry Laboratory, OrganizationDescription: NULL, OrganizationLink: "http://canoeecology.weebly.com/lab-services.html", ParentOrganizationID: *OrganizationID001}
+  - &OrganizationID005 {OrganizationTypeCV: Analytical laboratory, OrganizationCode: BYU_Aanderud_Lab, OrganizationName: BYU Aanderud Lab, OrganizationDescription: NULL, OrganizationLink: NULL, ParentOrganizationID: *OrganizationID003}
+  - &OrganizationID006 {OrganizationTypeCV: Analytical laboratory, OrganizationCode: UU_SIRFER, OrganizationName: University of Utah SIRFER Lab, OrganizationDescription: NULL, OrganizationLink: NULL, ParentOrganizationID: *OrganizationID002}
 
 Affiliations:
-  - &AffiliationID001 {PersonID: *PersonID001, OrganizationID: *OrganizationID002, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: , PrimaryPhone: , PrimaryEmail: dave.eiriksson@utah.edu, PrimaryAddress: , PersonLink: }
-  - &AffiliationID002 {PersonID: *PersonID002, OrganizationID: *OrganizationID001, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: , PrimaryPhone: , PrimaryEmail: chris.cox@usu.edu, PrimaryAddress: , PersonLink: }
-  - &AffiliationID003 {PersonID: *PersonID003, OrganizationID: *OrganizationID003, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: , PrimaryPhone: , PrimaryEmail: joe_crawford@byu.edu, PrimaryAddress: , PersonLink: }
-  - &AffiliationID004 {PersonID: *PersonID004, OrganizationID: *OrganizationID006, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: , PrimaryPhone: , PrimaryEmail: Unknown, PrimaryAddress: , PersonLink: }
-  - &AffiliationID005 {PersonID: *PersonID005, OrganizationID: *OrganizationID004, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: , PrimaryPhone: , PrimaryEmail: Unknown, PrimaryAddress: , PersonLink: }
+  - &AffiliationID001 {PersonID: *PersonID001, OrganizationID: *OrganizationID002, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: NULL, PrimaryPhone: Unknown, PrimaryEmail: dave.eiriksson@utah.edu, PrimaryAddress: Unknown, PersonLink: NULL}
+  - &AffiliationID002 {PersonID: *PersonID002, OrganizationID: *OrganizationID001, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: NULL, PrimaryPhone: Unknown, PrimaryEmail: chris.cox@usu.edu, PrimaryAddress: Unknown, PersonLink: NULL}
+  - &AffiliationID003 {PersonID: *PersonID003, OrganizationID: *OrganizationID003, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: NULL, PrimaryPhone: Unknown, PrimaryEmail: joe_crawford@byu.edu, PrimaryAddress: Unknown, PersonLink: NULL}
+  - &AffiliationID004 {PersonID: *PersonID004, OrganizationID: *OrganizationID006, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: NULL, PrimaryPhone: Unknown, PrimaryEmail: Unknown, PrimaryAddress: Unknown, PersonLink: NULL}
+  - &AffiliationID005 {PersonID: *PersonID005, OrganizationID: *OrganizationID004, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: NULL, PrimaryPhone: Unknown, PrimaryEmail: Unknown, PrimaryAddress: Unknown, PersonLink: NULL}
 
 AuthorList:
   - &AuthorID001 {AuthorName: *PersonID001, AuthorOrder: 1}
@@ -106,15 +106,15 @@ Actions:
   - &ActionID009 {ActionTypeCV: Specimen analysis, MethodID: *MethodID004, BeginDateTime: "2015-01-01 00:30:00", BeginDateTimeUTCOffset: -7.0, EndDateTime: "2015-01-01 04:00:00", EndDateTimeUTCOffset: -7.0, ActionDescription: Specimen analysis., ActionFileLink: NULL}
 
 ActionBy:
-  - {ActionID: *ActionID001, AffiliationID: *AffiliationID001, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID002, AffiliationID: *AffiliationID001, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID003, AffiliationID: *AffiliationID002, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID004, AffiliationID: *AffiliationID002, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID005, AffiliationID: *AffiliationID004, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID006, AffiliationID: *AffiliationID004, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID007, AffiliationID: *AffiliationID005, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID008, AffiliationID: *AffiliationID005, IsActionLead: True, RoleDescription: }
-  - {ActionID: *ActionID009, AffiliationID: *AffiliationID005, IsActionLead: True, RoleDescription: }
+  - {ActionID: *ActionID001, AffiliationID: *AffiliationID001, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID002, AffiliationID: *AffiliationID001, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID003, AffiliationID: *AffiliationID002, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID004, AffiliationID: *AffiliationID002, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID005, AffiliationID: *AffiliationID004, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID006, AffiliationID: *AffiliationID004, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID007, AffiliationID: *AffiliationID005, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID008, AffiliationID: *AffiliationID005, IsActionLead: True, RoleDescription: NULL}
+  - {ActionID: *ActionID009, AffiliationID: *AffiliationID005, IsActionLead: True, RoleDescription: NULL}
 
 # Relate the the actions to the SamplingFeatures to which they apply
 FeatureActions:
@@ -159,7 +159,7 @@ MeasurementResultValues:
     - {ColumnNumber: 1, Label: ValueDateTime, ODM2Field: ValueDateTime}
     - {ColumnNumber: 2, Label: ValueDateTimeUTCOffset, ODM2Field: ValueDateTimeUTCOffset}
     - {ColumnNumber: 3, Label: DataValue, ODM2Field: DataValue}
-    - {ColumnNumber: 4, Label: MeasurementResultID, ODM2Field: }
+    - {ColumnNumber: 4, Label: MeasurementResultID, ODM2Field: NULL}
   Data:
   - [ValueDateTime,ValueDateTimeUTCOffset,DataValue,MeasurementResultID]
   - &ValueID001 ["2015-01-01 00:30:00",-7.0,0.02,*MeasurementResultID001]
