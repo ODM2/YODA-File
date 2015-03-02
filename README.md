@@ -11,7 +11,7 @@ Our goal for **YODA Files** is to substantially extend the original CZO Display 
 In addition, we aim to develop a number of tools to assist with the creation and parsing of YODA Files.
 
 ###Design
-A YODA File will follow the syntax of either [JSON](http://www.json.org/) (JavaScript Object Notation) or [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), which are lightweight data-interchange formats that can be readily parsed by any modern computer language.  In addition, by YODA File convention, most data will be contained within a comma-separated data array block that can be easily parsed by a spreadsheet application into data columns.
+A YODA File will follow the data serialization and interchange format of [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), a superset of [JSON](http://www.json.org/) (JavaScript Object Notation) which can be readily parsed by any modern computer language. In addition, by YODA File convention, most data will be contained within a comma-separated data array table that can be easily parsed by a spreadsheet application into data columns.
 
 A YODA File will be structurally validated against required and optional ODM2 fields and controlled vocabularies using [JSON Schema](http://json-schema.org/), which provides a means for documenting the YODA File Schema and set of software tools for validating any JSON file against our schema. 
 
