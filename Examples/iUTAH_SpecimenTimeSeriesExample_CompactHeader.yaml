@@ -3,14 +3,11 @@
 # TODO:  Where objects are referenced by referencing an anchor, what should the element name be (e.g., "Action" or "ActionID"?)
 
 ---
-YODA: {Version: 1.0.0, Profile: SpecimenTimeSeries}
+YODA:
+  - {Version: 1.0.0, Profile: SpecimenTimeSeries}
 
-Dataset:
-  DataSetUUID: "000000000000000000000"
-  DataSetTypeCV: SpecimenTimeSeries
-  DataSetCode: iUTAH_GAMUT_WQ_Samples
-  DataSetTitle: Water Quality Sample Results for the iUTAH GAMUT Network
-  DataSetAbstract: These data represent results from water quality samples collected at the iUTAH GAMUT Network aquatic monitoring sites.
+Datasets:
+  - {DataSetUUID: "000000000000000000000", DataSetTypeCV: SpecimenTimeSeries, DataSetCode: iUTAH_GAMUT_WQ_Samples, DataSetTitle: Water Quality Sample Results for the iUTAH GAMUT Network, DataSetAbstract: These data represent results from water quality samples collected at the iUTAH GAMUT Network aquatic monitoring sites.}
 
 People:
   - &PersonID001 {PersonFirstName: Dave, PersonMiddleName: NULL, PersonLastName: Eiriksson}
@@ -34,17 +31,13 @@ Affiliations:
   - &AffiliationID004 {PersonID: *PersonID004, OrganizationID: *OrganizationID006, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: NULL, PrimaryPhone: Unknown, PrimaryEmail: Unknown, PrimaryAddress: Unknown, PersonLink: NULL}
   - &AffiliationID005 {PersonID: *PersonID005, OrganizationID: *OrganizationID004, IsPrimaryOrganizationContact: No, AffiliationStartDate: "2013-01-01", AffiliationEndDate: NULL, PrimaryPhone: Unknown, PrimaryEmail: Unknown, PrimaryAddress: Unknown, PersonLink: NULL}
 
-AuthorList:
+AuthorLists:
   - &AuthorID001 {AuthorName: *PersonID001, AuthorOrder: 1}
   - &AuthorID002 {AuthorName: *PersonID002, AuthorOrder: 2}
   - &AuthorID003 {AuthorName: *PersonID003, AuthorOrder: 3}
 
-Citation:
-    Title: Water Quality Sample Results for the iUTAH GAMUT Network
-    Publisher: iUTAH Modeling and Data Federation
-    PubliationYear: 2015
-    CitationLink: http://repository.iutahepscor.org/dataset/iUTAH_GAMUT_WQ_Samples
-    Authors: [*AuthorID001, *AuthorID002, *AuthorID003]
+Citations:
+  - {Title: Water Quality Sample Results for the iUTAH GAMUT Network, Publisher: iUTAH Modeling and Data Federation, PubliationYear: 2015, CitationLink: "http://repository.iutahepscor.org/dataset/iUTAH_GAMUT_WQ_Samples", Authors: [*AuthorID001, *AuthorID002, *AuthorID003]}
 
 SpatialReferences:
   - &SRSID001 {SRSCode: "EPSG:4269", SRSName: NAD83, SRSDescription: NULL, SRSLink: "http://www.epsg-registry.org/export.htm?wkt=urn:ogc:def:crs:EPSG::4269"}
