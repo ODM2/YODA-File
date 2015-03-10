@@ -13,12 +13,12 @@ People:
   - &PersonID001 {PersonFirstName: Jeffery, PersonMiddleName: S., PersonLastName: Horsburgh}
   - &PersonID002 {PersonFirstName: Amber, PersonMiddleName: NULL, PersonLastName: Spackman Jones}
 
-AuthorLists:
-  - &AuthorID001 {AuthorName: *PersonID001, AuthorOrder: 1}
-  - &AuthorID002 {AuthorName: *PersonID002, AuthorOrder: 2}
-
 Citations:
-  - {Title: Air temperature at the TW Daniels Experimental Forest Climate Station, Publisher: iUTAH Modeling and Data Federation, PubliationYear: 2015, CitationLink: "http://repository.iutahepscor.org/dataset/iutah-gamut-network-raw-data-at-tw-daniels-forest-climate-site-lr-twdef-c", Authors: [*AuthorID001, *AuthorID002]}
+  - &CitationID001 {Title: Air temperature at the TW Daniels Experimental Forest Climate Station, Publisher: iUTAH Modeling and Data Federation, PublicationYear: 2015, CitationLink: "http://repository.iutahepscor.org/dataset/iutah-gamut-network-raw-data-at-tw-daniels-forest-climate-site-lr-twdef-c"}
+
+AuthorLists:
+  - &AuthorID001 {CitationObj: *CitationID001, PersonObj: *PersonID001, AuthorOrder: 1}
+  - &AuthorID002 {CitationObj: *CitationID001, PersonObj: *PersonID002, AuthorOrder: 2}
 
 SpatialReferences:
   - &SRSID001 {SRSCode: "EPSG:4269", SRSName: NAD83, SRSDescription: NULL, SRSLink: "http://www.epsg-registry.org/export.htm?wkt=urn:ogc:def:crs:EPSG::4269"}
@@ -30,7 +30,7 @@ SamplingFeatures:
 Sites:
   - {SamplingFeatureID: *SamplingFeatureID001, SiteTypeCV: Atmosphere, Latitude: 41.864805, Longitude: -111.507494, SpatialReferenceID: *SRSID001}
 
-Methods:     # Organizations associated with Methods are missing
+Methods:
   - &MethodID001 {MethodTypeCV: Instrument deployment, MethodCode: Air_Temp_HC2S3, MethodName: HC2S3 Air Temperature, MethodDescription: Air temperature measured using a Campbell Scientific HC2S3 temperature and relative humidity sensor. Average over 15 minutes., MethodLink: "http://data.iutahepscor.org", OrganizationID: NULL}
 
 Variables:
