@@ -1,5 +1,6 @@
 ---
-YODA: {Version: 1.0.0, Profile: TimeSeries, DateCreated: "2015-03-13", DateUpdated: "2015-03-13"}
+YODA:
+  - {YODAVersion: "1.0.0", Profile: "TimeSeries", CreationTool: "Excel Template v1.0.0", DateCreated: "2015-03-13", DateUpdated: "2015-03-13"}
 Datasets:
   - &DataSetID0001 {DataSetUUID:  NULL,  DataSetTypeCV:  "Climate",  DataSetCode:  "TWDEF_AirTemp",  DataSetTitle:  "Air temperature at the TW Daniels Experimental Forest Climate Station",  DataSetAbstract:  "Air temperature at the TW Daniels Experimental Forest Climate Station. The data were measured using a Campbell Scientific HC2S3 temperature and relative humidity sensor. Measurements represent the average over the 15 minute recording period."}
 Organizations:
@@ -43,15 +44,15 @@ SamplingFeatures:
 SamplingFeaturesExternalIdentifiers:
   - {SamplingFeatureObj:  *SamplingFeatureID0008, ExternalIdentifierSystemObj:  *ExternalIdentifierSystemID0003, SamplingFeatureExternalIdentifier:  "SSH000SUA", SamplingFeatureExternalIdentifierURI:  "http://app.geosamples.org/sample/igsn/SSH000SUA"}
 Sites:
-  - &SiteID0001 {SamplingFeatureObj:  *SamplingFeatureID0001, SiteTypeCV:  "Stream", Latitude:  40.809522, Longitude:  -111.765472, SpatialReferenceObj:  *SRSID0001}
-  - &SiteID0002 {SamplingFeatureObj:  *SamplingFeatureID0002, SiteTypeCV:  "Stream", Latitude:  40.774228, Longitude:  -111.817025, SpatialReferenceObj:  *SRSID0001}
-  - &SiteID0003 {SamplingFeatureObj:  *SamplingFeatureID0007, SiteTypeCV:  "Atmosphere", Latitude:  41.864805, Longitude:  -111.507494, SpatialReferenceObj:  *SRSID0001}
+  - {SamplingFeatureObj:  *SamplingFeatureID0001, SiteTypeCV:  "Stream", Latitude:  40.809522, Longitude:  -111.765472, SpatialReferenceObj:  *SRSID0001}
+  - {SamplingFeatureObj:  *SamplingFeatureID0002, SiteTypeCV:  "Stream", Latitude:  40.774228, Longitude:  -111.817025, SpatialReferenceObj:  *SRSID0001}
+  - {SamplingFeatureObj:  *SamplingFeatureID0007, SiteTypeCV:  "Atmosphere", Latitude:  41.864805, Longitude:  -111.507494, SpatialReferenceObj:  *SRSID0001}
 Specimens:
-  - &SpecimenID0001 {SamplingFeatureObj:  *SamplingFeatureID0003, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
-  - &SpecimenID0002 {SamplingFeatureObj:  *SamplingFeatureID0004, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
-  - &SpecimenID0003 {SamplingFeatureObj:  *SamplingFeatureID0005, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
-  - &SpecimenID0004 {SamplingFeatureObj:  *SamplingFeatureID0006, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
-  - &SpecimenID0005 {SamplingFeatureObj:  *SamplingFeatureID0008, SpecimenTypeCV:  "Individual sample", SpecimenMediumCV:  Rock, IsFieldSpecimen:  "TRUE"}
+  - {SamplingFeatureObj:  *SamplingFeatureID0003, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
+  - {SamplingFeatureObj:  *SamplingFeatureID0004, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
+  - {SamplingFeatureObj:  *SamplingFeatureID0005, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
+  - {SamplingFeatureObj:  *SamplingFeatureID0006, SpecimenTypeCV:  "Grab", SpecimenMediumCV:  Liquid aqueous, IsFieldSpecimen:  "TRUE"}
+  - {SamplingFeatureObj:  *SamplingFeatureID0008, SpecimenTypeCV:  "Individual sample", SpecimenMediumCV:  Rock, IsFieldSpecimen:  "TRUE"}
 Spatialoffsets:
   - &SpatialOffsetID0001 {SpatialOffsetTypeCV:  "Depth", Offset1Value:  10, Offset1UnitObj:  "meters", Offset2Value:  NULL, Offset2UnitObj:  NULL, Offset3Value:  NULL, Offset3UnitObj:  NULL}
 RelatedFeatures:
@@ -95,20 +96,20 @@ Results:
   - &ResultID0002 {ResultUUID:  NULL, FeatureActionObj: *FeatureActionID0002, ResultTypeCV:  "Time series coverage", VariableObj:  *VariableID0005, UnitsObj:  NULL, TaxonomicClassifierObj:  NULL, ProcessingLevelObj:  *ProcessingLevelID0001, ResultDateTime:  NULL, ResultDateTimeUTCOffset:  NULL, ValidDateTime:  NULL, ValidDateTimeUTCOffset:  NULL, StatusCV:  NULL, SampledMediumCV:  "Gas", ValueCount:  3359}
   - &ResultID0003 {ResultUUID:  NULL, FeatureActionObj: *FeatureActionID0003, ResultTypeCV:  "Time series coverage", VariableObj:  *VariableID0006, UnitsObj:  NULL, TaxonomicClassifierObj:  NULL, ProcessingLevelObj:  *ProcessingLevelID0001, ResultDateTime:  NULL, ResultDateTimeUTCOffset:  NULL, ValidDateTime:  NULL, ValidDateTimeUTCOffset:  NULL, StatusCV:  NULL, SampledMediumCV:  "Gas", ValueCount:  3359}
 DataSetsResults:
-    - {DataSetObj: *DataSetID0001, ResultObj: *ResultID0001}
-    - {DataSetObj: *DataSetID0001, ResultObj: *ResultID0002}
-    - {DataSetObj: *DataSetID0001, ResultObj: *ResultID0003}
+  - {DataSetObj: *DataSetID0001, ResultObj: *ResultID0001}
+  - {DataSetObj: *DataSetID0001, ResultObj: *ResultID0002}
+  - {DataSetObj: *DataSetID0001, ResultObj: *ResultID0003}
 TimeSeriesResults:
-  - &TimeSeriesResultID0010001 {ResultObj: *ResultID0001, XLocation:  NULL, XLocationUnitsObj:  NULL, YLocation:  NULL, YLocationUnitsObj:  NULL, ZLocation:  NULL, ZLocationUnitsObj:  NULL, SpatialReferenceObj:  NULL, IntendedTimeSpacing:  NULL, IntendedTimeSpacingUnitsObj:  NULL, AggregationStatisticCV:  "Average"}
-  - &TimeSeriesResultID0010002 {ResultObj: *ResultID0002, XLocation:  NULL, XLocationUnitsObj:  NULL, YLocation:  NULL, YLocationUnitsObj:  NULL, ZLocation:  NULL, ZLocationUnitsObj:  NULL, SpatialReferenceObj:  NULL, IntendedTimeSpacing:  NULL, IntendedTimeSpacingUnitsObj:  NULL, AggregationStatisticCV:  "Minimum"}
-  - &TimeSeriesResultID0010003 {ResultObj: *ResultID0003, XLocation:  NULL, XLocationUnitsObj:  NULL, YLocation:  NULL, YLocationUnitsObj:  NULL, ZLocation:  NULL, ZLocationUnitsObj:  NULL, SpatialReferenceObj:  NULL, IntendedTimeSpacing:  NULL, IntendedTimeSpacingUnitsObj:  NULL, AggregationStatisticCV:  "Maximum"}
+  - {ResultObj: *ResultID0001, XLocation:  NULL, XLocationUnitsObj:  NULL, YLocation:  NULL, YLocationUnitsObj:  NULL, ZLocation:  NULL, ZLocationUnitsObj:  NULL, SpatialReferenceObj:  NULL, IntendedTimeSpacing:  NULL, IntendedTimeSpacingUnitsObj:  NULL, AggregationStatisticCV:  "Average"}
+  - {ResultObj: *ResultID0002, XLocation:  NULL, XLocationUnitsObj:  NULL, YLocation:  NULL, YLocationUnitsObj:  NULL, ZLocation:  NULL, ZLocationUnitsObj:  NULL, SpatialReferenceObj:  NULL, IntendedTimeSpacing:  NULL, IntendedTimeSpacingUnitsObj:  NULL, AggregationStatisticCV:  "Minimum"}
+  - {ResultObj: *ResultID0003, XLocation:  NULL, XLocationUnitsObj:  NULL, YLocation:  NULL, YLocationUnitsObj:  NULL, ZLocation:  NULL, ZLocationUnitsObj:  NULL, SpatialReferenceObj:  NULL, IntendedTimeSpacing:  NULL, IntendedTimeSpacingUnitsObj:  NULL, AggregationStatisticCV:  "Maximum"}
 TimeSeriesResultValues:
   ColumnDefinitions:
     - {ColumnNumber: 0001, Label: ValueDateTime, ODM2Field: ValueDateTime}
     - {ColumnNumber: 0002, Label: ValueDateTimeUTCOffset, ODM2Field: ValueDateTimeUTCOffset}
-    - {ColumnNumber: 0003, Label:  "AirTemp_Avg", ODM2Field:  "DataValue", CensorCodeCV:  "Not censored", QualiatyCodeCV:  "Good", TimeAggregationInterval:  15, TimeAggregationIntervalUnitsObj:  NULL}
-    - {ColumnNumber: 0004, Label:  "AirTemp_Min", ODM2Field:  "DataValue", CensorCodeCV:  "Not censored", QualiatyCodeCV:  "Good", TimeAggregationInterval:  15, TimeAggregationIntervalUnitsObj:  NULL}
-    - {ColumnNumber: 0005, Label:  "AirTemp_Max", ODM2Field:  "DataValue", CensorCodeCV:  "Not censored", QualiatyCodeCV:  "Good", TimeAggregationInterval:  15, TimeAggregationIntervalUnitsObj:  NULL}
+    - {ColumnNumber: 0003, Label:  "AirTemp_Avg", ODM2Field:  "DataValue", Result: *ResultID0001, CensorCodeCV:  "Not censored", QualiatyCodeCV:  "Good", TimeAggregationInterval:  15, TimeAggregationIntervalUnitsObj:  NULL}
+    - {ColumnNumber: 0004, Label:  "AirTemp_Min", ODM2Field:  "DataValue", Result: *ResultID0002, CensorCodeCV:  "Not censored", QualiatyCodeCV:  "Good", TimeAggregationInterval:  15, TimeAggregationIntervalUnitsObj:  NULL}
+    - {ColumnNumber: 0005, Label:  "AirTemp_Max", ODM2Field:  "DataValue", Result: *ResultID0003, CensorCodeCV:  "Not censored", QualiatyCodeCV:  "Good", TimeAggregationInterval:  15, TimeAggregationIntervalUnitsObj:  NULL}
   Data:
   - [[
 ValueDateTime, ValueDateTimeUTCOffset, AirTemp_Avg, AirTemp_Min, AirTemp_Max ],[
