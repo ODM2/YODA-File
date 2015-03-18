@@ -6,7 +6,7 @@
 YODA:
   - {Version: 1.0.0, Profile: TimeSeries}
 
-Datasets:
+DataSets:
   - {DataSetUUID: "000000000000000000000", DataSetTypeCV: TimeSeriesTable, DataSetCode: TWDEF_AirTemp, DataSetTitle: Air temperature at the TW Daniels Experimental Forest Climate Station, DataSetAbstract: Air temperature at the TW Daniels Experimental Forest Climate Station. The data were measured using a Campbell Scientific HC2S3 temperature and relative humidity sensor. Measurements represent the average over the 15 minute recording period.}
 
 People:
@@ -17,8 +17,8 @@ Citations:
   - &CitationID001 {Title: Air temperature at the TW Daniels Experimental Forest Climate Station, Publisher: iUTAH Modeling and Data Federation, PublicationYear: 2015, CitationLink: "http://repository.iutahepscor.org/dataset/iutah-gamut-network-raw-data-at-tw-daniels-forest-climate-site-lr-twdef-c"}
 
 AuthorLists:
-  - &AuthorID001 {CitationObj: *CitationID001, PersonObj: *PersonID001, AuthorOrder: 1}
-  - &AuthorID002 {CitationObj: *CitationID001, PersonObj: *PersonID002, AuthorOrder: 2}
+  - &AuthorID001 {CitationID: *CitationID001, PersonID: *PersonID001, AuthorOrder: 1}
+  - &AuthorID002 {CitationID: *CitationID001, PersonID: *PersonID002, AuthorOrder: 2}
 
 SpatialReferences:
   - &SRSID001 {SRSCode: "EPSG:4269", SRSName: NAD83, SRSDescription: NULL, SRSLink: "http://www.epsg-registry.org/export.htm?wkt=urn:ogc:def:crs:EPSG::4269"}
@@ -49,15 +49,18 @@ ProcessingLevels:
 Actions:
   - &ActionID001 {ActionTypeCV: Observation, MethodID: *MethodID001, BeginDateTime: "2015-01-01 00:30:00", BeginDateTimeUTCOffset: -7.0, EndDateTime: "2015-01-01 04:00:00", EndDateTimeUTCOffset: -7.0, ActionDescription: Deployment of an air temperature sensor resulting in multiple time series of air temperature observations., ActionFileLink: NULL}
 
+FeatureActions:
+  - &FeatureActionID001 {SamplingFeatureID: *SamplingFeatureID001, ActionID: *ActionID001}
+
 Results:
-  - &ResultID001 {ResultUUID: "000000000000000000000", SamplingFeatureID: *SamplingFeatureID001, ActionID: *ActionID001, ResultTypeCV: TimeSeries, VariableID: *VariableID001, UnitsID: *UnitID002, TaxonomicClassifierID: NULL, ProcessingLevelID: *ProcessingLevelID001, ResultDateTime: "2014-01-07 11:15:00", ResultDateTimeUTCOffset: -7.0, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: Ongoing, SampledMediumCV: Gas, ValueCount: 38056}
-  - &ResultID002 {ResultUUID: "000000000000000000000", SamplingFeatureID: *SamplingFeatureID001, ActionID: *ActionID001, ResultTypeCV: TimeSeries, VariableID: *VariableID002, UnitsID: *UnitID002, TaxonomicClassifierID: NULL, ProcessingLevelID: *ProcessingLevelID001, ResultDateTime: "2014-01-07 11:15:00", ResultDateTimeUTCOffset: -7.0, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: Ongoing, SampledMediumCV: Gas, ValueCount: 38056}
-  - &ResultID003 {ResultUUID: "000000000000000000000", SamplingFeatureID: *SamplingFeatureID001, ActionID: *ActionID001, ResultTypeCV: TimeSeries, VariableID: *VariableID003, UnitsID: *UnitID002, TaxonomicClassifierID: NULL, ProcessingLevelID: *ProcessingLevelID001, ResultDateTime: "2014-01-07 11:15:00", ResultDateTimeUTCOffset: -7.0, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: Ongoing, SampledMediumCV: Gas, ValueCount: 38056}
+  - &ResultID001 {ResultUUID: "000000000000000000000", FeatureActionID: *FeatureActionID001, ResultTypeCV: 'TimeSeries', VariableID: *VariableID001, UnitsID: *UnitID002, TaxonomicClassifierID: NULL, ProcessingLevelID: *ProcessingLevelID001, ResultDateTime: "2014-01-07 11:15:00", ResultDateTimeUTCOffset: -7.0, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: Ongoing, SampledMediumCV: Gas, ValueCount: 38056}
+  - &ResultID002 {ResultUUID: "000000000000000000000", FeatureActionID: *FeatureActionID001, ResultTypeCV: 'TimeSeries', VariableID: *VariableID002, UnitsID: *UnitID002, TaxonomicClassifierID: NULL, ProcessingLevelID: *ProcessingLevelID001, ResultDateTime: "2014-01-07 11:15:00", ResultDateTimeUTCOffset: -7.0, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: Ongoing, SampledMediumCV: Gas, ValueCount: 38056}
+  - &ResultID003 {ResultUUID: "000000000000000000000", FeatureActionID: *FeatureActionID001, ResultTypeCV: 'TimeSeries', VariableID: *VariableID003, UnitsID: *UnitID002, TaxonomicClassifierID: NULL, ProcessingLevelID: *ProcessingLevelID001, ResultDateTime: "2014-01-07 11:15:00", ResultDateTimeUTCOffset: -7.0, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: Ongoing, SampledMediumCV: Gas, ValueCount: 38056}
 
 TimeSeriesResults:
   - &TimeSeriesResultID001 {ResultID: *ResultID001, XLocation: 0, XLocationUnitsID: *UnitID003, YLocation: 0, YLocationUnitsID: *UnitID003, ZLocation: 2, ZLocationUnitsID: *UnitID003, SpatialReferenceID: *SRSID002, IntendedTimeSpacing: 15, IntendedTimeSpacingUnitsID: *UnitID002, AggregationStatisticCV: Average}
-  - &TimeSeriesResultID002 {ResultID: *ResultID002, XLocation: 0, XLocationUnitsID: *UnitID003, YLocation: 0, YLocationUnitsID: *UnitID003, ZLocation: 2, ZLocationUnitsID: *UnitID003, SpatialReferenceID: *SRSID002, IntendedTimeSpacing: 15, IntendedTimeSpacingUnitsID: *UnitID002, AggregationStatisticsCV: Minimum}
-  - &TimeSeriesResultID003 {ResultID: *ResultID003, XLocation: 0, XLocationUnitsID: *UnitID003, YLocation: 0, YLocationUnitsID: *UnitID003, ZLocation: 2, ZLocationUnitsID: *UnitID003, SpatialReferenceID: *SRSID002, IntendedTimeSpacing: 15, IntendedTimeSpacingUnitsID: *UnitID002, AggregationStatisticsCV: Maximum}
+  - &TimeSeriesResultID002 {ResultID: *ResultID002, XLocation: 0, XLocationUnitsID: *UnitID003, YLocation: 0, YLocationUnitsID: *UnitID003, ZLocation: 2, ZLocationUnitsID: *UnitID003, SpatialReferenceID: *SRSID002, IntendedTimeSpacing: 15, IntendedTimeSpacingUnitsID: *UnitID002, AggregationStatisticCV: Minimum}
+  - &TimeSeriesResultID003 {ResultID: *ResultID003, XLocation: 0, XLocationUnitsID: *UnitID003, YLocation: 0, YLocationUnitsID: *UnitID003, ZLocation: 2, ZLocationUnitsID: *UnitID003, SpatialReferenceID: *SRSID002, IntendedTimeSpacing: 15, IntendedTimeSpacingUnitsID: *UnitID002, AggregationStatisticCV: Maximum}
 
 TimeSeriesResultValues:
   ColumnDefinitions:
