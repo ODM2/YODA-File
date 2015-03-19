@@ -47,7 +47,7 @@ ProcessingLevels:
   - &ProcessingLevelID001 {ProcessingLevelCode: "0", Definition: Raw data, Explanation: "Raw and unprocessed data and data products that have not undergone quality control.  Depending on the variable, data type, and data transmission system, raw data may be available within seconds or minutes after the measurements have been made. Examples include real time precipitation, streamflow and water quality measurements."}
 
 Actions:
-  - &ActionID001 {ActionTypeCV: Observation, MethodID: *MethodID001, BeginDateTime: "2015-01-01 00:30:00", BeginDateTimeUTCOffset: -7.0, EndDateTime: "2015-01-01 04:00:00", EndDateTimeUTCOffset: -7.0, ActionDescription: Deployment of an air temperature sensor resulting in multiple time series of air temperature observations., ActionFileLink: NULL}
+  - &ActionID001 {ActionTypeCV: Instrument deployment, MethodID: *MethodID001, BeginDateTime: "2015-01-01 00:30:00", BeginDateTimeUTCOffset: -7.0, EndDateTime: "2015-01-01 04:00:00", EndDateTimeUTCOffset: -7.0, ActionDescription: Deployment of an air temperature sensor resulting in multiple time series of air temperature observations., ActionFileLink: NULL}
 
 FeatureActions:
   - &FeatureActionID001 {SamplingFeatureID: *SamplingFeatureID001, ActionID: *ActionID001}

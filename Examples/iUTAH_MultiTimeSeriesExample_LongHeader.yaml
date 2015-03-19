@@ -129,7 +129,7 @@ ProcessingLevels:
   
 Actions:
   - &ActionID001
-    ActionTypeCV: Observation
+    ActionTypeCV: Instrument deployment
     MethodID: *MethodID001
     BeginDateTime: 2015-01-01 00:30:00
     BeginDateTimeUTCOffset: -7.0
