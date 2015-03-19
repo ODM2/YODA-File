@@ -4,10 +4,10 @@
 
 ---
 YODA:
-  - {Version: 1.0.0, Profile: SpecimenTimeSeries}
+  - {Version: 1.0.0, Profile: SpecimenTimeSeries, CreationTool: NULL, DateCreated: "2015-03-19", DateUpdated: "2015-03-19"}
 
 Datasets:
-  - {DataSetUUID: "000000000000000000000", DataSetTypeCV: SpecimenTimeSeries, DataSetCode: iUTAH_GAMUT_WQ_Samples, DataSetTitle: Water Quality Sample Results for the iUTAH GAMUT Network, DataSetAbstract: These data represent results from water quality samples collected at the iUTAH GAMUT Network aquatic monitoring sites.}
+  - &DatasetID001 {DataSetUUID: "000000000000000000000", DataSetTypeCV: SpecimenTimeSeries, DataSetCode: iUTAH_GAMUT_WQ_Samples, DataSetTitle: Water Quality Sample Results for the iUTAH GAMUT Network, DataSetAbstract: These data represent results from water quality samples collected at the iUTAH GAMUT Network aquatic monitoring sites.}
 
 People:
   - &PersonID001 {PersonFirstName: Dave, PersonMiddleName: NULL, PersonLastName: Eiriksson}
@@ -37,7 +37,10 @@ AuthorLists:
   - &AuthorID003 {AuthorName: *PersonID003, AuthorOrder: 3}
 
 Citations:
-  - {Title: Water Quality Sample Results for the iUTAH GAMUT Network, Publisher: iUTAH Modeling and Data Federation, PubliationYear: 2015, CitationLink: "http://repository.iutahepscor.org/dataset/iUTAH_GAMUT_WQ_Samples", Authors: [*AuthorID001, *AuthorID002, *AuthorID003]}
+  - &CitationID001 {Title: Water Quality Sample Results for the iUTAH GAMUT Network, Publisher: iUTAH Modeling and Data Federation, PubliationYear: 2015, CitationLink: "http://repository.iutahepscor.org/dataset/iUTAH_GAMUT_WQ_Samples", Authors: [*AuthorID001, *AuthorID002, *AuthorID003]}
+
+DataSetCitations:
+  - {DataSetID: *DatasetID001, RelationshipTypeCV: isCitationFor, CitationID: *CitationID001}
 
 SpatialReferences:
   - &SRSID001 {SRSCode: "EPSG:4269", SRSName: NAD83, SRSDescription: NULL, SRSLink: "http://www.epsg-registry.org/export.htm?wkt=urn:ogc:def:crs:EPSG::4269"}

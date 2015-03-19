@@ -6,6 +6,9 @@
 YODA:
   Version: 1.0.0
   Profile: TimeSeries
+  CreationTool: NULL
+  DateCreated: "2015-03-19"
+  DateUpdated: "2015-03-19"
 
 Datasets:
   - &DatasetID001
@@ -138,9 +141,9 @@ Actions:
   - &ActionID001
     ActionTypeCV: Instrument deployment
     MethodID: *MethodID001
-    BeginDateTime: 2015-01-01 00:30:00
+    BeginDateTime: "2015-01-01 00:30:00"
     BeginDateTimeUTCOffset: -7.0
-    EndDateTime: 2015-01-01 04:00:00
+    EndDateTime: "2015-01-01 04:00:00"
     EndDateTimeUTCOffset: -7.0
     ActionDescription: Deployment of an air temperature sensor resulting in multiple time series of air temperature observations.
     ActionFileLink: NULL
