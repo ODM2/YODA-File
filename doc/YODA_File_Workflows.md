@@ -1,18 +1,24 @@
 The YODA File Work Flows
 ========================
 1. User creates a new YODA file for a Dataset for the first time using one of the Excel Templates
+
     a. User downloads the blank Excel template file
     b. User types or copies and pastes metadata into the template
     c. User copies and pastes data values into the template
     d. User types UUIDs into the template OR uses the code in the template to generate them for the first time
-    e. User generates the YODA file using the template 
+    e. User generates the YODA file using the template
+
 2. User wants to add additional data to the same Dataset or Result for which an existing YODA file has been created.  The same same UUIDs will be used for SamplingFeatures, Results, and Dataset.
+
     a. User creates a new YODA template file by copying an existing YODA template file. Most of the metadata can stay the same, but the data **MUST** be different.
+
         i. User copies the existing YODA Excel Template to a new file
         ii. User deletes the data from the DataValues tab
         iii. User pastes new data into the DataValues tab
         iv. User generates the YODA file using the template 
-3. User wants to create a new version of an existing YODA file. In this case there is likely a problem with the data stored in the existing file or the metadata discription is wrong, needs to be updated, or is incomplete.
+
+3. User wants to create a new version of an existing YODA file. In this case there is likely a problem with the data stored in the existing file or the metadata description is wrong, needs to be updated, or is incomplete.
+
     a. User creates a new YODA file by copying an existing YODA template file. 
     b. User modifies the metadata description 
     c. User modifies the data content of the file
