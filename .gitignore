@@ -1,4 +1,5 @@
 *.bak
 *.tmp
+*\idea*
 ExcelTemplates/Prototypes/~$YODA_TimeSeries_TEMPLATE_WORKING.xlsm
 ExcelTemplates/Prototypes/~$YODA_Specimen_TEMPLATE_WORKING.xlsm
