@@ -15,13 +15,13 @@ Our goal for **YODA Files** is to substantially extend the original CZO Display 
 
 In addition, we aim to develop a number of tools to assist with the creation and parsing of YODA Files.
 
-###Design
+###Design Vision
 A YODA File follows the data serialization and interchange format of [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), a superset of [JSON](http://www.json.org/) (JavaScript Object Notation) which can be readily parsed by any modern computer language. In addition, by YODA File convention, most data will be contained within a comma-separated data array table that can be easily parsed by a spreadsheet application into data columns.
 
 A YODA File will be structurally validated against required and optional ODM2 fields and controlled vocabularies using [JSON Schema](http://json-schema.org/), which provides a means for documenting the YODA File Schema and set of software tools for validating any JSON file against our schema. This **work in progress** can be found in the [YODA-Tools repository](https://github.com/ODM2/YODA-Tools).
 
 ###Specification
-The [draft YODA File Specification](https://github.com/ODM2/YODA-File/blob/master/YODAFile_Specification_Draft0.md) and [other YODA File documentation](https://github.com/ODM2/YODA-File/tree/master/doc) provide many design and implementation details, but are presently a *work in progress*.
+The [draft YODA File Specification](https://github.com/ODM2/YODA-File/blob/master/doc/YODAFile_Specification_Draft0.md) and [other YODA File documentation](https://github.com/ODM2/YODA-File/tree/master/doc) provide many design and implementation details, but are presently a *work in progress*.
 
 ###History
 The original [CZO Display File](http://criticalzone.org/national/publications/pub/whitenack-et-al-2011-czo-display-file-specification/) format was developed in 2010-2011 as a means for [US Critical Zone Observatories](http://criticalzone.org/) to share data in a form that was both human readable and machine parsable. The header provides structured metadata that allows the comma-separated data to be ingested into an [Observations Data Model 1.1 (ODM1.1)](http://his.cuahsi.org/odmdatabases.html) database, such as a [CUAHSI HydroServer](http://his.cuahsi.org/hydroserver.html).
