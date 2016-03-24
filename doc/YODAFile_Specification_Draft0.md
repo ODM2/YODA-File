@@ -2,23 +2,26 @@ YAML Observation Data Archive & Exchange (YODA) Format Specification Document
 
 # Introduction
 
-## History
-
-The [CZO Display File v1](http://criticalzone.org/national/publications/pub/whitenack-et-al-2011-czo-display-file-specification/) format was developed in 2010-2011 as a means for [US Critical Zone Observatories](http://criticalzone.org/) to share data in a form that was both human readable and machine parsable. The header provides structured metadata that allows the comma-separated data to be ingested into an [Observations Data Model 1.1 (ODM1.1)](http://his.cuahsi.org/odmdatabases.html) database, such as a [CUAHSI Hydroserver](http://his.cuahsi.org/hydroserver.html).
-
 ## Goals
 
-Our goal for the **YAML Observation Data Archive & Exchange (YODA) Format** is to substantially extend the CZO Display File specification to accommodate the full diversity of critical zone science data -- such as hydrological time series, soil profile geochemistry, biodiversity transects, etc. -- that can be organized with the [Observations Data Model v2 (ODM2)](https://github.com/UCHIC/ODM2). In addition, the YODA FIle will meet the following requirements:
+We developed the **YAML Observation Data Archive & Exchange (YODA) File Format** to serve as a specification for human-readable, machine-parseable, text-based data files that accommodate the full diversity of critical zone science data -- such as hydrological time series, soil profile geochemistry, biodiversity transects, etc. -- that can be organized with the [Observations Data Model v2 (ODM2)](https://github.com/ODM2/ODM2). 
 
-* **Easy for humans to read and write**. Anyone opening the file in a text editor or spreadsheet application should be able to quickly and intuitively understand the file contents and how to use the data.
+Specifically, we designed the YODA File format to meet the following requirements:
+
+* **Easy for humans to read and use**. Anyone opening the file in a text editor or spreadsheet application should be able to intuitively understand the contents of the file's structured metadata header and comma-separated data table.
 
 * **Easy for machines to parse and generate**. The file should be very easy to parse and validate with the wide variety of software tools used by scientists.
 
-* **Conform to the metadata requirements of an ****[ODM**2](https://github.com/UCHIC/ODM2)** ****[Datase**t](https://github.com/UCHIC/ODM2/blob/master/doc/ODM2Docs/core_datasets.md), and yet have the flexibility to utilize a variety of controlled vocabularies.
+* **Group results into a single data array** similar to how scientists most commonly view their data, but also conforming to the metadata requirements of an [ODM2](https://github.com/ODM2/ODM2) [Dataset](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/core_datasets.md).
 
-* **Serve as a self-describing archival file format** that is readily accepted by earth and environmental science data respositories, such as [IEDA EarthChem](http://www.earthchem.org/library) or [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/)
+* **Serve as a self-describing archival file format** that is readily accepted by earth and environmental science data respositories, such as [IEDA EarthChem Library](http://www.earthchem.org/library) or [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/)
 
-In addition, we aim to develop a number of tools to assist with the creation and parsing of CZO Display Files.
+In addition, we are developing the [YODA Tools](https://github.com/ODM2/YodaTools) library to assist with the creation, validation and parsing of YODA Files.
+
+## History
+
+The YODA file format developed out of the effort to substantially extend the CZO Display File specfication. The original [CZO Display File](http://criticalzone.org/national/publications/pub/whitenack-et-al-2011-czo-display-file-specification/) format was developed in 2010-2011 as a means for [US Critical Zone Observatories](http://criticalzone.org/) to share data in a form that was both human readable and machine parsable. The header provides structured metadata that allows the comma-separated data to be ingested into an [Observations Data Model 1.1 (ODM1.1)](http://his.cuahsi.org/odmdatabases.html) database, such as a [CUAHSI HydroServer](http://his.cuahsi.org/hydroserver.html).
+
 
 # Overall Design
 
