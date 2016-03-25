@@ -18,14 +18,14 @@ Excel templates exist for the following YODA profiles:
 * *ODM2 ResultTypes*: [MeasurementResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_measurement.md), [CategoricalResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_categorical.md) ([diagrams](http://odm2.github.io/ODM2/schemas/ODM2_Current/diagrams/ODM2Results.html))
 * *Sampling Features*: sites and specimens can vary by row
 * *Row index*: DateTime (+ UTCOffset) + SamplingFeatureID
-* *Column*: Method, Result attributes (i.e. VariableName, UnitsName) and SamplingFeature are constant over the entire column
+* *Column*: Method, Result attributes (i.e. VariableName, UnitsName)
 
 **Specimen Time Series**(under development):  Use this template if you are creating a YODA file for observations derived from physical specimens and your data are in a serial format (e.g., one date/time column and one data value column where each row in the table represents an observation of a particular variable).
 
-* *ODM2 ResultTypes*: [TimeSeriesResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_timeseries.md) ([diagrams](http://odm2.github.io/ODM2/schemas/ODM2_Current/diagrams/ODM2Results.html))
+* *ODM2 ResultTypes*: [MeasurementResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_measurement.md), [CategoricalResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_categorical.md) ([diagrams](http://odm2.github.io/ODM2/schemas/ODM2_Current/diagrams/ODM2Results.html))
 * *Sampling Features*: entire data array refers to a single site, but specimens can vary by row
 * *Row index*: DateTime (+ UTCOffset) + SamplingFeatureID for specimens
-* *Column*: Method, Result attributes (i.e. VariableName, UnitsName) and SamplingFeature are constant over the entire column
+* *Column*: Method, Result attributes (i.e. VariableName, UnitsName) and Site.SamplingFeature are constant over the entire column
 
 For example implementations, see the [examples folder](https://github.com/ODM2/YODA-File/tree/master/examples).
 
