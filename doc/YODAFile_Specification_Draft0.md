@@ -27,10 +27,11 @@ The YODA file format developed out of the effort to substantially extend the CZO
 
 ## Data Serialization Format
 
-A YODA File will follow the data serialization and interchange format of [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), a superset of [JSON](http://www.json.org/) (JavaScript Object Notation), which can be readily parsed by any modern computer language. In addition, by YODA File convention, most data will be contained within a comma-separated data array table that can be easily parsed by a spreadsheet application into data columns.
+A YODA File follows the data serialization and interchange format of [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), a superset of [JSON](http://www.json.org/) (JavaScript Object Notation). YAML can be readily [parsed by any modern computer language](http://yaml.org/). 
 
-A YODA File will be structurally validated against required and optional ODM2 fields and controlled vocabularies using [JSON Schema](http://json-schema.org/), which provides a means for documenting the YODA FIle Schema and set of software tools for validating any JSON file against our schema.
+The key feature of a YODA file that distiguishes it from generic YAML is that a YODA file (1) organizes data into a comma-separated data array (table) with multiple columns and rows, and (2) provides all the metadata of an [ODM2](https://github.com/ODM2/ODM2) [Dataset](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/core_datasets.md) so that the data array can be parsed by software into an [ODM2](https://github.com/ODM2/ODM2) database instance.
 
+A YODA File will be structurally validated against required and optional ODM2 fields and controlled vocabularies using [JSON Schema](http://json-schema.org/), which provides a means for documenting the YODA File Schema and set of software tools for validating any JSON file against our schema. This **work in progress** can be found in the [YODA-Tools repository](https://github.com/ODM2/YODA-Tools).
 ## Block Structure
 
 The YODA file will have information "blocks" which match 1:1 with the required tables in ODM2.0.  Each block will be titled with the name of the corresponding ODM2 table.  Within each block, there will be a YAML list containing the information for each field in the specified ODM2 table.  Any values that will be referenced by other records should be preceded by a YAML anchor.
