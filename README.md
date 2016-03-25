@@ -16,14 +16,14 @@ We developed the **YAML Observation Data Archive & Exchange (YODA) File Format**
 * **Group results into a single data array** similar to how scientists most commonly view their data, but also conforming to the metadata requirements of an [ODM2](https://github.com/ODM2/ODM2) [Dataset](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/core_datasets.md).
 * **Serve as a self-describing archival file format** that is readily accepted by earth and environmental science data repositories, such as [IEDA EarthChem Library](http://www.earthchem.org/library) or [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/)
 
-In addition, we are developing the [YODA Tools](https://github.com/ODM2/YodaTools) library to assist with the creation, validation and parsing of YODA Files.
-
 ###Design Vision
 A YODA File follows the data serialization and interchange format of [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), a superset of [JSON](http://www.json.org/) (JavaScript Object Notation). YAML can be readily [parsed by any modern computer language](http://yaml.org/). 
 
-The key feature of a YODA file that distiguishes it from generic YAML is that a YODA file (1) organizes data into a comma-separated data array (table) with multiple columns and rows, and (2) provides all the metadata of an [ODM2](https://github.com/ODM2/ODM2) [Dataset](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/core_datasets.md) so that the data array can be parsed by software into an [ODM2](https://github.com/ODM2/ODM2) database instance.
+The key feature of a YODA file that distiguishes it from generic YAML is that a YODA file (1) organizes data into a comma-separated data array (e.g. a data table or DataFrame) with multiple columns and rows, and (2) provides all the metadata of an [ODM2](https://github.com/ODM2/ODM2) [Dataset](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/core_datasets.md) so that the data array can be parsed by software into an [ODM2](https://github.com/ODM2/ODM2) database instance.
 
 A YODA File will be structurally validated against required and optional ODM2 fields and controlled vocabularies using [JSON Schema](http://json-schema.org/), which provides a means for documenting the YODA File Schema and set of software tools for validating any JSON file against our schema. This **work in progress** can be found in the [YODA-Tools repository](https://github.com/ODM2/YODA-Tools).
+
+We are also developing the [YODA Tools](https://github.com/ODM2/YodaTools) library, which is built upon the [ODM2PythonAPI](https://github.com/ODM2/ODM2PythonAPI) to create YODA files from our [YODA Excel Templates](https://github.com/ODM2/YODA-File/tree/master/excel_templates) or from an ODM2 database and to import YODA Files into an ODM2 database. YODA Files will thus serve as an interchange format between components of the [ODM2 Software Ecosystem](http://www.odm2.org/).
 
 ###Specification
 The [draft YODA File Specification](https://github.com/ODM2/YODA-File/blob/master/doc/YODAFile_Specification_Draft0.md) and [other YODA File documentation](https://github.com/ODM2/YODA-File/tree/master/doc) provide many design and implementation details, but are presently a *work in progress*.
