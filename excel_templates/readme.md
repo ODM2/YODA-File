@@ -20,7 +20,7 @@ Excel templates exist for the following YODA profiles:
 * *Row index*: DateTime (+ UTCOffset) + SamplingFeatureID
 * *Column*: Method, Result attributes (i.e. VariableName, UnitsName)
 
-**Specimen Time Series** (under development):  Use this template if you are creating a YODA file for observations derived from physical specimens and your data are in a serial format (e.g., one date/time column and one data value column where each row in the table represents an observation of a particular variable).
+**Specimen Time Series** (under development):  Use this template if you are creating a YODA file for observations derived from physical specimens and your data are in a serial format (e.g., one date/time column and one data value column where each row in the table represents an observation of a particular variable on a particular specimen). This template is particularly useful for datasets where specimens were analyzed, but there is not a set or standard set of analyses for each specimen.
 
 * *ODM2 ResultTypes*: [Measurement Results](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_measurement.md), [Categorical Results](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_categorical.md) ([diagrams](http://odm2.github.io/ODM2/schemas/ODM2_Current/diagrams/ODM2Results.html))
 * *Sampling Features*: the full data array can refer to one or more sites, but each row in the table represents a result of a single analysis on a single specimen
