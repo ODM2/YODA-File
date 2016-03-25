@@ -8,8 +8,8 @@ Excel templates exist for the following YODA profiles:
 
 **Time Series**: Use this template if you are creating a YODA file for observations derived from in-situ sensors or other regularly spaced time series data (e.g., your input data are formatted similar to a datalogger output file with one date/time column and multiple data columns where each data column represents a different variable).
 
-* *ODM2 ResultTypes*: [TimeSeriesResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_timeseries.md) ([diagrams](http://odm2.github.io/ODM2/schemas/ODM2_Current/diagrams/ODM2Results.html))
-* *Sampling Features*: entire data array refers to a single SamplingFeature, but multiple SamplingFeatures in a nested hiearchy can be described in the header
+* *ODM2 ResultTypes*: [Time Series Coverage Results](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_timeseries.md) ([diagrams](http://odm2.github.io/ODM2/schemas/ODM2_Current/diagrams/ODM2Results.html))
+* *Sampling Features*: entire data array refers to one or more SamplingFeatures, all of which have to be of type "Site"
 * *Row index*: DateTime (+ UTCOffset)
 * *Column*: Method, Result attributes (i.e. VariableName, UnitsName) and SamplingFeature are constant over the entire column
 
