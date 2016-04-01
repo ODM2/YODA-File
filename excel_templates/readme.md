@@ -1,13 +1,16 @@
 Excel Templates
 ===============
-The folders in this directory hold blank Microsoft Excel templates for generating valid YODA files according to the following profiles:
+The folders in this directory hold blank Microsoft Excel templates for generating valid YODA files. Each Excel template has been developed to serve a single **[YODA profile](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)** for common dataset types, to ease data and metadata input by the end-user.
 
-**Time Series**: Use this template if you are creating a YODA file for observations derived from in-situ sensors or other regularly spaced time series data (e.g., your input data are formatted similar to a datalogger output file with one date/time column and multiple data columns where each data column represents a different variable).
 
-**Specimens** (under development):  Use this template if you are creating a YODA file for observations derived from physical specimens and your data conform to a cross tabulated format (e.g., one date/time column with multiple data columns where each data column represents a different variable).
 
-**Specimen Time Series**(under development):  Use this template if you are creating a YODA file for observations derived from physical specimens and your data are in a serial format (e.g., one date/time column and one data value column where each row in the table represents an observation of a particular variable).
+###Excel templates exist for the following YODA profiles:
+1. [Time Series](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
+2. [Specimens](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
+3. [Specimen Time Series](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
 
-For example implementations, see the [examples folder](https://github.com/ODM2/YODA-File/tree/master/examples).
+[Other YODA profiles](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md#other-envisioned-yoda-profiles) are envisioned.
 
-The **Old Prototypes** folder contains older versions of the templates.  These should not be used, but we have kept them in case we need to refer back to them.
+For example Excel template implementations, see the [examples folder](https://github.com/ODM2/YODA-File/tree/master/examples).
+
+The [prototypes folder](https://github.com/ODM2/YODA-File/tree/master/excel_templates/prototypes) contains older versions of the templates.  These should not be used, but we have kept them in case we need to refer back to them.
