@@ -31,9 +31,7 @@ The following YODA profiles have been developed for common dataset types to serv
 * *Row index*: DateTime (+ UTCOffset) + [SamplingFeatureID for Specimens](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_samplingfeatures.md#sampling-features-that-are-specimens) + Result attributes (i.e., VariableName + Method + Units)
 * *Data Column*: There is a single data value column. All data values go in this single column.
 
-For example implementations, see the [examples folder](https://github.com/ODM2/YODA-File/tree/master/examples).
-
-The **Old Prototypes** folder contains older versions of the templates.  These should not be used, but we have kept them in case we need to refer back to them.
+For example Excel template implementations, see the [examples folder](https://github.com/ODM2/YODA-File/tree/master/examples).
 
 
 ###Other envisioned YODA profiles:
