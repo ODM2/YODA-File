@@ -36,7 +36,7 @@ For example implementations, see the [examples folder](https://github.com/ODM2/Y
 The **Old Prototypes** folder contains older versions of the templates.  These should not be used, but we have kept them in case we need to refer back to them.
 
 
-###Other envisioned YODA profiles include:
+###Other envisioned YODA profiles:
 
 * Spectra for [ODM2 SpectraResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_spectra.md)
 * SensorDepthProfile for [ODM2 ProfileResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_profile.md)

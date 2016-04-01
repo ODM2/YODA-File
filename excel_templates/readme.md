@@ -9,7 +9,7 @@ The folders in this directory hold blank Microsoft Excel templates for generatin
 2. [Specimens](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
 3. [Specimen Time Series](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
 
-[Other YODA profiles](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md) are envisioned.
+[Other YODA profiles](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md#other-envisioned-yoda-profiles) are envisioned.
 
 For example Excel template implementations, see the [examples folder](https://github.com/ODM2/YODA-File/tree/master/examples).
 
