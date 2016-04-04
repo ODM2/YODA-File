@@ -1,7 +1,9 @@
 Time Series Template Examples
 =============================
 
-This folder contains example time series datasets that have been generated using the YODA Time Series Excel Template.
+This folder contains example time series datasets that have been generated using the YODA Time Series Excel Template. Example datasets are organized in folders according to the version of the template that was used to generate them. 
+
+The following are descriptions of the examples:
 
 **YODA_TimeSeries_Example1**: Contains three time series of air temperature from a climate monitoring site representing the daily minimum, average, and maximum air temperatures.
 
