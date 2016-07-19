@@ -1,0 +1,240 @@
+---
+YODA:
+  - {Version: "0.1.0", Profile: "SpecimenTimeSeries", CreationTool: "Manual", DateCreated: "2016-07-07 ", DateUpdated: "2016-07-14"}
+DataSets:
+  - &DatasetID0001 {DataSetUUID: "F2BA669F-7E03-412B-AC5A-1793C85B7113", DataSetTypeCV: "Specimen time series", DataSetCode: "LR_SpecTS", DataSetTitle: "iUTAH synoptic sampling 2013-2014 for the Logan River specimen time series", DataSetAbstract: "This dataset consists of results from the 2013-2014 iUTAH GAMUT synoptic sample collection and analysis effort for the Logan River. Samples were collected by grab sampling once per month each month between June 2013 and June 2014. Analyses were performed for nutrients (total nigrogen and total phosphorus) at the USU Aquatic Biogeochemistry Laboratory, isotopes (D18O and D2H) at the University of Utah Stable Isotope Ratio for Environmental Research Laboratory, and bacteria (E.coli and total coliform) at the BYU Aanderud laboratory."}
+Organizations:
+  - &OrganizationID0001 {OrganizationTypeCV: "University", OrganizationCode: "USU", OrganizationName: "Utah State University", OrganizationDescription: NULL, OrganizationLink: "http://www.usu.edu"}
+  - &OrganizationID0002 {OrganizationTypeCV: "University", OrganizationCode: "BYU", OrganizationName: "Brigham Young University", OrganizationDescription: NULL, OrganizationLink: "http://www.byu.edu"}
+  - &OrganizationID0003 {OrganizationTypeCV: "University", OrganizationCode: "USUABL", OrganizationName: "USU Aquatic Biogeochemistry Lab", OrganizationDescription: NULL, OrganizationLink: "http://www.usu.edu"}
+  - &OrganizationID0004 {OrganizationTypeCV: "Research organization", OrganizationCode: "SIRFER", OrganizationName: "Stable Isotope Ratio Facility for Environmental Research", OrganizationDescription: NULL, OrganizationLink: "http://www.sirfer.utah.edu"}
+People:
+  - &PersonID0001 {PersonFirstName: "Erin", PersonMiddleName: NULL, PersonLastName: "Jones"}
+  - &PersonID0002 {PersonFirstName: "Janet", PersonMiddleName: NULL, PersonLastName: "Barnette"}
+  - &PersonID0003 {PersonFirstName: "Jason", PersonMiddleName: NULL, PersonLastName: "Bahr"}
+  - &PersonID0004 {PersonFirstName: "Chris", PersonMiddleName: NULL, PersonLastName: "Cox"}
+  - &PersonID0005 {PersonFirstName: "Unknown", PersonMiddleName: NULL, PersonLastName: "Person"}
+  - &PersonID0006 {PersonFirstName: "Lisa", PersonMiddleName: NULL, PersonLastName: "Ward"}
+Affiliations:
+  - &AffiliationID0001 {PersonObj: *PersonID0001, OrganizationObj: *OrganizationID0002, IsPrimaryOrganizationContact: NULL, AffiliationStartDate: "2015-01-01 00:00", AffiliationEndDate: NULL, PrimaryPhone: NULL, PrimaryEmail: "erinfjones@gmail.com", PrimaryAddress: NULL, PersonLink: NULL}
+  - &AffiliationID0002 {PersonObj: *PersonID0002, OrganizationObj: *OrganizationID0004, IsPrimaryOrganizationContact: NULL, AffiliationStartDate: "2015-01-01 00:00", AffiliationEndDate: NULL, PrimaryPhone: NULL, PrimaryEmail: "janet.barnette@utah.edu", PrimaryAddress: NULL, PersonLink: NULL}
+  - &AffiliationID0003 {PersonObj: *PersonID0003, OrganizationObj: *OrganizationID0001, IsPrimaryOrganizationContact: NULL, AffiliationStartDate: "2015-01-01 00:00", AffiliationEndDate: NULL, PrimaryPhone: NULL, PrimaryEmail: "jrbahr@gmail.com", PrimaryAddress: NULL, PersonLink: NULL}
+  - &AffiliationID0004 {PersonObj: *PersonID0004, OrganizationObj: *OrganizationID0001, IsPrimaryOrganizationContact: NULL, AffiliationStartDate: "2015-01-01 00:00", AffiliationEndDate: NULL, PrimaryPhone: NULL, PrimaryEmail: "chris.cox@usu.edu", PrimaryAddress: NULL, PersonLink: NULL}
+  - &AffiliationID0005 {PersonObj: *PersonID0005, OrganizationObj: *OrganizationID0001, IsPrimaryOrganizationContact: NULL, AffiliationStartDate: "2015-01-01 00:00", AffiliationEndDate: NULL, PrimaryPhone: NULL, PrimaryEmail: "unknown", PrimaryAddress: NULL, PersonLink: NULL}
+  - &AffiliationID0006 {PersonObj: *PersonID0006, OrganizationObj: *OrganizationID0003, IsPrimaryOrganizationContact: NULL, AffiliationStartDate: "2015-01-01 00:00", AffiliationEndDate: NULL, PrimaryPhone: NULL, PrimaryEmail: "lisa.ward@usu.edu", PrimaryAddress: NULL, PersonLink: NULL}
+Citations:
+  - &CitationID0001 {Title: "iUTAH GAMUT Logan River Synoptic Sampling Results", Publisher: "iUTAH", PublicationYear: 2016, CitationLink: NULL}
+AuthorLists:
+  - &AuthorListID0001 {CitationObj: *CitationID0001, PersonObj: *PersonID0005, AuthorOrder: 1}
+DataSetCitations:
+  - {DataSetObj: *DatasetID0001, CitationObj: *CitationID0001, RelationshipTypeCV: "Is identical to"}
+SpatialReferences:
+  - &SRSID0001 {SRSCode: "EPSG:4326", SRSName: "WGS84", SRSDescription: "Horizontal component of 3D system. Used by the GPS satellite navigation system and for NATO military geodetic surveying.", SRSLink: "http://www.epsg-registry.org/export.htm?wkt=urn:ogc:def:crs:EPSG::4326"}
+SamplingFeatures:
+  - &SamplingFeatureID0001 {SamplingFeatureUUID: "1135DBC9-5F91-4F9F-A8C9-F70B6703691F", SamplingFeatureTypeCV: "Site", SamplingFeatureCode: "LR_BSFork", SamplingFeatureName: "Blacksmith Fork River upstream of confluence with Logan River near 800 West 1600 South", SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: "Point", FeatureGeometry: NULL, Elevation_m: "1357.352661", ElevationDatumCV: "EGM96"}
+  - &SamplingFeatureID0002 {SamplingFeatureUUID: "2D7EB86E-408C-4CD2-AFEB-D13CAA9AEB09", SamplingFeatureTypeCV: "Specimen", SamplingFeatureCode: "D3236", SamplingFeatureName: NULL, SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: NULL, FeatureGeometry: NULL, Elevation_m: NULL, ElevationDatumCV: NULL}
+  - &SamplingFeatureID0003 {SamplingFeatureUUID: "F1604024-FC2A-4F6F-A34F-A346DA00EDF1", SamplingFeatureTypeCV: "Specimen", SamplingFeatureCode: "524", SamplingFeatureName: NULL, SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: NULL, FeatureGeometry: NULL, Elevation_m: NULL, ElevationDatumCV: NULL}
+  - &SamplingFeatureID0004 {SamplingFeatureUUID: "09F03895-57A1-41E3-B0C7-4C63CC012E62", SamplingFeatureTypeCV: "Specimen", SamplingFeatureCode: "D1147_ISO", SamplingFeatureName: NULL, SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: NULL, FeatureGeometry: NULL, Elevation_m: NULL, ElevationDatumCV: NULL}
+  - &SamplingFeatureID0005 {SamplingFeatureUUID: "32DE7BDE-19FA-44DB-BF56-424AF6EF31B0", SamplingFeatureTypeCV: "Specimen", SamplingFeatureCode: "D1147", SamplingFeatureName: NULL, SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: NULL, FeatureGeometry: NULL, Elevation_m: NULL, ElevationDatumCV: NULL}
+  - &SamplingFeatureID0006 {SamplingFeatureUUID: "0862A096-8756-418F-8E06-5BE9DB36BF36", SamplingFeatureTypeCV: "Specimen", SamplingFeatureCode: "Z052", SamplingFeatureName: NULL, SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: NULL, FeatureGeometry: NULL, Elevation_m: NULL, ElevationDatumCV: NULL}
+  - &SamplingFeatureID0007 {SamplingFeatureUUID: "E1CA62F7-56F0-4254-9F38-88C05E78BE7F", SamplingFeatureTypeCV: "Specimen", SamplingFeatureCode: "D977", SamplingFeatureName: NULL, SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: NULL, FeatureGeometry: NULL, Elevation_m: NULL, ElevationDatumCV: NULL}
+  - &SamplingFeatureID0008 {SamplingFeatureUUID: "70B87BAC-6B80-4228-A1AC-F86E07D888DF", SamplingFeatureTypeCV: "Specimen", SamplingFeatureCode: "Z020", SamplingFeatureName: NULL, SamplingFeatureDescription: NULL, SamplingFeatureGeotypeCV: NULL, FeatureGeometry: NULL, Elevation_m: NULL, ElevationDatumCV: NULL}
+Sites:
+  - {SamplingFeatureObj: *SamplingFeatureID0001, SiteTypeCV: "Stream", Latitude: 41.705385, Longitude: -111.852324, SpatialReferenceObj: *SRSID0001}
+Specimens:
+  - {SamplingFeatureObj: *SamplingFeatureID0002, SpecimenTypeCV: "Grab", SpecimenMediumCV: "Liquid aqueous", IsFieldSpecimen: TRUE}
+  - {SamplingFeatureObj: *SamplingFeatureID0003, SpecimenTypeCV: "Grab", SpecimenMediumCV: "Liquid aqueous", IsFieldSpecimen: TRUE}
+  - {SamplingFeatureObj: *SamplingFeatureID0004, SpecimenTypeCV: "Grab", SpecimenMediumCV: "Liquid aqueous", IsFieldSpecimen: TRUE}
+  - {SamplingFeatureObj: *SamplingFeatureID0005, SpecimenTypeCV: "Grab", SpecimenMediumCV: "Liquid aqueous", IsFieldSpecimen: TRUE}
+  - {SamplingFeatureObj: *SamplingFeatureID0006, SpecimenTypeCV: "Grab", SpecimenMediumCV: "Liquid aqueous", IsFieldSpecimen: TRUE}
+  - {SamplingFeatureObj: *SamplingFeatureID0007, SpecimenTypeCV: "Grab", SpecimenMediumCV: "Liquid aqueous", IsFieldSpecimen: TRUE}
+  - {SamplingFeatureObj: *SamplingFeatureID0008, SpecimenTypeCV: "Grab", SpecimenMediumCV: "Liquid aqueous", IsFieldSpecimen: TRUE}
+RelatedFeatures:
+  - {RelatedFeatureObj: *SamplingFeatureID0002, RelationshipTypeCV: "Was collected at", SamplingFeatureObj: *SamplingFeatureID0001, SpatialOffsetID: NULL}
+  - {RelatedFeatureObj: *SamplingFeatureID0003, RelationshipTypeCV: "Was collected at", SamplingFeatureObj: *SamplingFeatureID0001, SpatialOffsetID: NULL}
+  - {RelatedFeatureObj: *SamplingFeatureID0004, RelationshipTypeCV: "Was collected at", SamplingFeatureObj: *SamplingFeatureID0001, SpatialOffsetID: NULL}
+  - {RelatedFeatureObj: *SamplingFeatureID0005, RelationshipTypeCV: "Was collected at", SamplingFeatureObj: *SamplingFeatureID0001, SpatialOffsetID: NULL}
+  - {RelatedFeatureObj: *SamplingFeatureID0006, RelationshipTypeCV: "Was collected at", SamplingFeatureObj: *SamplingFeatureID0001, SpatialOffsetID: NULL}
+  - {RelatedFeatureObj: *SamplingFeatureID0007, RelationshipTypeCV: "Was collected at", SamplingFeatureObj: *SamplingFeatureID0001, SpatialOffsetID: NULL}
+  - {RelatedFeatureObj: *SamplingFeatureID0008, RelationshipTypeCV: "Was collected at", SamplingFeatureObj: *SamplingFeatureID0001, SpatialOffsetID: NULL}
+Units:
+  - &UnitID0001 {UnitsTypeCV: "Concentration or density mass per volume", UnitsAbbreviation: "mg/l", UnitsName: "milligrams per liter", UnitsLink: NULL}
+  - &UnitID0002 {UnitsTypeCV: "Concentration count per volume", UnitsAbbreviation: "CFU/100ml", UnitsName: "CFU per 100 milliliters", UnitsLink: NULL}
+  - &UnitID0003 {UnitsTypeCV: "Dimensionless", UnitsAbbreviation: "%", UnitsName: "percent", UnitsLink: NULL}
+  - &UnitID0004 {UnitsTypeCV: "Time", UnitsAbbreviation: "s", UnitsName: "second", UnitsLink: NULL}
+  - &UnitID0005 {UnitsTypeCV: "Time", UnitsAbbreviation: "min", UnitsName: "minute", UnitsLink: NULL}
+  - &UnitID0006 {UnitsTypeCV: "Time", UnitsAbbreviation: "hhmm", UnitsName: "hour minute", UnitsLink: NULL}
+Annotations:
+  - &AnnotationID001 {AnnotationTypeCV: "Measurement result value annotation", AnnotationCode: "R", AnnotationText: "Laboratory replicate", AnnotationDateTime: NULL, AnnotationUTCOffset: NULL, AnnotationLink: NULL, AnnotatorID: NULL, CitationID: NULL}
+  - &AnnotationID002 {AnnotationTypeCV: "Measurement result value annotation", AnnotationCode: "HT", AnnotationText: "Holding time exceeded", AnnotationDateTime: NULL, AnnotationUTCOffset: NULL, AnnotationLink: NULL, AnnotatorID: NULL, CitationID: NULL}
+  - &AnnotationID003 {AnnotationTypeCV: "Measurement result value annotation", AnnotationCode: "CAL", AnnotationText: "Questionable instrument calibration", AnnotationDateTime: NULL, AnnotationUTCOffset: NULL, AnnotationLink: NULL, AnnotatorID: NULL, CitationID: NULL}    
+Methods:
+  - &MethodID0001 {MethodTypeCV: "Specimen collection", MethodCode: "GRB_TN_TP", MethodName: "Grab TN TP", MethodDescription: "Grab samples collected in the field with acid-washed bottles for TN and TP analysis.", MethodLink: NULL, OrganizationObj: *OrganizationID0001}
+  - &MethodID0002 {MethodTypeCV: "Specimen collection", MethodCode: "GRB_Auto", MethodName: "Grab Autoclaved Bottles", MethodDescription: "Grab samples collected in the field in autoclaved bottles.", MethodLink: NULL, OrganizationObj: *OrganizationID0001}
+  - &MethodID0003 {MethodTypeCV: "Specimen collection", MethodCode: "GRB_glassISO", MethodName: "Grab glass isotope", MethodDescription: "Grab sample collected in glass vial for isotope analysis.", MethodLink: NULL, OrganizationObj: *OrganizationID0001}
+  - &MethodID0004 {MethodTypeCV: "Specimen analysis", MethodCode: "Ast_TN", MethodName: "Astoria Total Nitrogen", MethodDescription: "Determination of total Nitrogen by persulphate oxidation digestion and cadmium reduction method", MethodLink: NULL, OrganizationObj: *OrganizationID0003}
+  - &MethodID0005 {MethodTypeCV: "Specimen analysis", MethodCode: "Ast_TP", MethodName: "Astoria Total Phosphorus", MethodDescription: "Determination of total phosphorus by persulphate oxidation digestion and ascorbic acid method", MethodLink: NULL, OrganizationObj: *OrganizationID0003}
+  - &MethodID0006 {MethodTypeCV: "Specimen analysis", MethodCode: "Pic_WaterISO", MethodName: "Picarro Water Isotopes", MethodDescription: "Hydrogen and oxygen water isotopes by isotope ratio infrared spectroscopy (IRIS)", MethodLink: NULL, OrganizationObj: *OrganizationID0004}
+  - &MethodID0007 {MethodTypeCV: "Specimen analysis", MethodCode: "IDEXX_EC&TC", MethodName: "IDEXX Ecoli & Total Coliform", MethodDescription: "State of Utah DWQ protocol for E.Coli and Total Coliform quantification using the IDEXX Quanti-tray/2000 system", MethodLink: NULL, OrganizationObj: *OrganizationID0002}
+Variables:
+  - &VariableID0001 {VariableTypeCV: "Water quality", VariableCode: "TN", VariableNameCV: "Nitrogen, total", VariableDefinition: NULL, SpeciationCV: "N", NoDataValue: -9999}
+  - &VariableID0002 {VariableTypeCV: "Water quality", VariableCode: "TP", VariableNameCV: "Phosphorus, total", VariableDefinition: NULL, SpeciationCV: "P", NoDataValue: -9999}
+  - &VariableID0003 {VariableTypeCV: "Water quality", VariableCode: "Tcoliform", VariableNameCV: "Coliform, total", VariableDefinition: NULL, SpeciationCV: "Not Applicable", NoDataValue: -9999}
+  - &VariableID0004 {VariableTypeCV: "Water quality", VariableCode: "E-coli", VariableNameCV: "E-coli", VariableDefinition: NULL, SpeciationCV: "Not Applicable", NoDataValue: -9999}
+  - &VariableID0005 {VariableTypeCV: "Water quality", VariableCode: "D180", VariableNameCV: "delta-18O of H2O", VariableDefinition: NULL, SpeciationCV: "Not Applicable", NoDataValue: -9999}
+  - &VariableID0006 {VariableTypeCV: "Water quality", VariableCode: "D2H", VariableNameCV: "delta-D of H2O", VariableDefinition: NULL, SpeciationCV: "Not Applicable", NoDataValue: -9999}
+ProcessingLevels:
+  - &ProcessingLevelID0001 {ProcessingLevelCode: "0", Definition: "Raw Data", Explanation: "Raw and unprocessed data and data products that have not undergone quality control.  Depending on the variable, data type, and data transmission system, raw data may be available within seconds or minutes after the measurements have been made. Examples include real time precipitation, streamflow and water quality measurements."}
+  - &ProcessingLevelID0002 {ProcessingLevelCode: "1", Definition: "Quality controlled data", Explanation: "Quality controlled data that have passed quality assurance procedures such as routine estimation of timing and sensor calibration or visual inspection and removal of obvious errors. An example is USGS published streamflow records following parsing through USGS quality control procedures."}
+  - &ProcessingLevelID0003 {ProcessingLevelCode: "2", Definition: "Derived products", Explanation: "Derived products that require scientific and technical interpretation and may include multiple-sensor data. An example is basin average precipitation derived from rain gages using an interpolation procedure."}
+  - &ProcessingLevelID0004 {ProcessingLevelCode: "3", Definition: "Interpreted products", Explanation: "Interpreted products that require researcher driven analysis and interpretation, model-based interpretation using other data and/or strong prior assumptions. An example is basin average precipitation derived from the combination of rain gages and radar return data."}
+  - &ProcessingLevelID0005 {ProcessingLevelCode: "4", Definition: "Knowledge products", Explanation: "Knowledge products that require researcher driven scientific interpretation and multidisciplinary data integration and include model-based interpretation using other data and/or strong prior assumptions. An example is percentages of old or new water in a hydrograph inferred from an isotope analysis."}
+Actions:
+  - &ActionID0001 {ActionTypeCV: "Specimen collection", MethodObj: *MethodID0001, BeginDateTime: "2013-05-16 12:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen collection action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0002 {ActionTypeCV: "Specimen collection", MethodObj: *MethodID0002, BeginDateTime: "2013-05-16 12:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen collection action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0003 {ActionTypeCV: "Specimen collection", MethodObj: *MethodID0003, BeginDateTime: "2013-06-24 11:55", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen collection action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0004 {ActionTypeCV: "Specimen collection", MethodObj: *MethodID0001, BeginDateTime: "2013-06-24 11:55", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen collection action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0005 {ActionTypeCV: "Specimen collection", MethodObj: *MethodID0002, BeginDateTime: "2013-06-24 11:55", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen collection action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0006 {ActionTypeCV: "Specimen collection", MethodObj: *MethodID0001, BeginDateTime: "2013-07-29 14:30", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen collection action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0007 {ActionTypeCV: "Specimen collection", MethodObj: *MethodID0002, BeginDateTime: "2013-07-29 14:30", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen collection action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0008 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0005, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0009 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0004, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0010 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0007, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0011 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0007, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0012 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0006, BeginDateTime: "2013-10-08 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0013 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0006, BeginDateTime: "2013-10-08 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0014 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0005, BeginDateTime: "2013-12-05 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0015 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0004, BeginDateTime: "2013-12-05 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0016 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0007, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0017 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0007, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0018 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0005, BeginDateTime: "2013-12-19 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0019 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0004, BeginDateTime: "2013-12-19 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0020 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0007, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+  - &ActionID0021 {ActionTypeCV: "Specimen analysis", MethodObj: *MethodID0007, BeginDateTime: "2014-01-01 00:00", BeginDateTimeUTCOffset: -7, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Specimen analysis action generated by Excel Template for SpecimenTimeSeries v.0.3-alpha", ActionFileLink: NULL}
+FeatureActions:
+  - &FeatureActionID0001 {SamplingFeatureObj: *SamplingFeatureID0001, ActionObj: *ActionID0001}
+  - &FeatureActionID0002 {SamplingFeatureObj: *SamplingFeatureID0001, ActionObj: *ActionID0002}
+  - &FeatureActionID0003 {SamplingFeatureObj: *SamplingFeatureID0001, ActionObj: *ActionID0003}
+  - &FeatureActionID0004 {SamplingFeatureObj: *SamplingFeatureID0001, ActionObj: *ActionID0004}
+  - &FeatureActionID0005 {SamplingFeatureObj: *SamplingFeatureID0001, ActionObj: *ActionID0005}
+  - &FeatureActionID0006 {SamplingFeatureObj: *SamplingFeatureID0001, ActionObj: *ActionID0006}
+  - &FeatureActionID0007 {SamplingFeatureObj: *SamplingFeatureID0001, ActionObj: *ActionID0007}
+  - &FeatureActionID0008 {SamplingFeatureObj: *SamplingFeatureID0002, ActionObj: *ActionID0008}
+  - &FeatureActionID0009 {SamplingFeatureObj: *SamplingFeatureID0002, ActionObj: *ActionID0009}
+  - &FeatureActionID0010 {SamplingFeatureObj: *SamplingFeatureID0003, ActionObj: *ActionID0010}
+  - &FeatureActionID0011 {SamplingFeatureObj: *SamplingFeatureID0003, ActionObj: *ActionID0011}
+  - &FeatureActionID0012 {SamplingFeatureObj: *SamplingFeatureID0004, ActionObj: *ActionID0012}
+  - &FeatureActionID0013 {SamplingFeatureObj: *SamplingFeatureID0004, ActionObj: *ActionID0013}
+  - &FeatureActionID0014 {SamplingFeatureObj: *SamplingFeatureID0005, ActionObj: *ActionID0014}
+  - &FeatureActionID0015 {SamplingFeatureObj: *SamplingFeatureID0005, ActionObj: *ActionID0015}
+  - &FeatureActionID0016 {SamplingFeatureObj: *SamplingFeatureID0006, ActionObj: *ActionID0016}
+  - &FeatureActionID0017 {SamplingFeatureObj: *SamplingFeatureID0006, ActionObj: *ActionID0017}
+  - &FeatureActionID0018 {SamplingFeatureObj: *SamplingFeatureID0007, ActionObj: *ActionID0018}
+  - &FeatureActionID0019 {SamplingFeatureObj: *SamplingFeatureID0007, ActionObj: *ActionID0019}
+  - &FeatureActionID0020 {SamplingFeatureObj: *SamplingFeatureID0008, ActionObj: *ActionID0020}
+  - &FeatureActionID0021 {SamplingFeatureObj: *SamplingFeatureID0008, ActionObj: *ActionID0021}
+ActionBy:
+  - {ActionObj: *ActionID0001, AffiliationObj: *AffiliationID0004, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0002, AffiliationObj: *AffiliationID0004, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0003, AffiliationObj: *AffiliationID0004, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0004, AffiliationObj: *AffiliationID0004, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0005, AffiliationObj: *AffiliationID0001, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0006, AffiliationObj: *AffiliationID0004, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0008, AffiliationObj: *AffiliationID0005, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0009, AffiliationObj: *AffiliationID0006, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0010, AffiliationObj: *AffiliationID0001, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0011, AffiliationObj: *AffiliationID0001, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0012, AffiliationObj: *AffiliationID0005, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0013, AffiliationObj: *AffiliationID0005, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0014, AffiliationObj: *AffiliationID0006, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0015, AffiliationObj: *AffiliationID0006, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0016, AffiliationObj: *AffiliationID0001, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0017, AffiliationObj: *AffiliationID0001, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0018, AffiliationObj: *AffiliationID0006, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0019, AffiliationObj: *AffiliationID0006, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0020, AffiliationObj: *AffiliationID0001, IsActionLead: TRUE, RoleDescription: NULL}
+  - {ActionObj: *ActionID0021, AffiliationObj: *AffiliationID0001, IsActionLead: TRUE, RoleDescription: NULL}
+RelatedActions:
+  - {ActionObj: *ActionID0008, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0001}
+  - {ActionObj: *ActionID0009, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0001}
+  - {ActionObj: *ActionID0010, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0002}
+  - {ActionObj: *ActionID0011, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0002}
+  - {ActionObj: *ActionID0012, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0003}
+  - {ActionObj: *ActionID0013, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0003}
+  - {ActionObj: *ActionID0014, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0004}
+  - {ActionObj: *ActionID0015, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0004}
+  - {ActionObj: *ActionID0016, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0005}
+  - {ActionObj: *ActionID0017, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0005}
+  - {ActionObj: *ActionID0018, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0006}
+  - {ActionObj: *ActionID0019, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0006}
+  - {ActionObj: *ActionID0020, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0007}
+  - {ActionObj: *ActionID0021, RelationshipTypeCV: "Is child of", RelatedActionObj: *ActionID0007}
+Results:
+  - &ResultID0001 {ResultUUID: "93D4E75E-29BF-40B1-9624-C9C896B6E3E4", FeatureActionObj: *FeatureActionID0008, ResultTypeCV: "Measurement", VariableObj: *VariableID0002, UnitsObj: *UnitID0001, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0002 {ResultUUID: "2708F885-86EA-45C4-A27D-44DEF56CC232", FeatureActionObj: *FeatureActionID0009, ResultTypeCV: "Measurement", VariableObj: *VariableID0001, UnitsObj: *UnitID0001, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0003 {ResultUUID: "7CB0D240-A622-4289-B9F6-235FE5012BE0", FeatureActionObj: *FeatureActionID0010, ResultTypeCV: "Measurement", VariableObj: *VariableID0004, UnitsObj: *UnitID0002, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}  
+  - &ResultID0004 {ResultUUID: "61DE4F45-276C-4053-81F0-D2C19939EB81", FeatureActionObj: *FeatureActionID0011, ResultTypeCV: "Measurement", VariableObj: *VariableID0003, UnitsObj: *UnitID0003, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0005 {ResultUUID: "3CFADA81-C69C-491D-90E4-9F2F13C8334F", FeatureActionObj: *FeatureActionID0012, ResultTypeCV: "Measurement", VariableObj: *VariableID0006, UnitsObj: *UnitID0003, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0006 {ResultUUID: "7E3EED3D-3596-43EB-B568-82D6F4F28D7D", FeatureActionObj: *FeatureActionID0013, ResultTypeCV: "Measurement", VariableObj: *VariableID0005, UnitsObj: *UnitID0003, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0007 {ResultUUID: "46C7DB4D-0E5E-4928-99B4-13F8E3664023", FeatureActionObj: *FeatureActionID0014, ResultTypeCV: "Measurement", VariableObj: *VariableID0002, UnitsObj: *UnitID0001, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0008 {ResultUUID: "11C44FDE-5808-483D-9114-52743E7C1E74", FeatureActionObj: *FeatureActionID0015, ResultTypeCV: "Measurement", VariableObj: *VariableID0001, UnitsObj: *UnitID0001, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0009 {ResultUUID: "1450A4BB-6C7A-4E81-A3EA-A3562A997C02", FeatureActionObj: *FeatureActionID0016, ResultTypeCV: "Measurement", VariableObj: *VariableID0004, UnitsObj: *UnitID0002, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0010 {ResultUUID: "841FED94-33D8-41E5-9996-6F1BFB57115B", FeatureActionObj: *FeatureActionID0017, ResultTypeCV: "Measurement", VariableObj: *VariableID0003, UnitsObj: *UnitID0002, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0011 {ResultUUID: "3B68EB46-5E61-4496-AE2C-6DEFE7F9829C", FeatureActionObj: *FeatureActionID0018, ResultTypeCV: "Measurement", VariableObj: *VariableID0002, UnitsObj: *UnitID0001, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0012 {ResultUUID: "C62AE005-F749-4D58-85AB-1B5433CC9C1D", FeatureActionObj: *FeatureActionID0019, ResultTypeCV: "Measurement", VariableObj: *VariableID0001, UnitsObj: *UnitID0001, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1} 
+  - &ResultID0013 {ResultUUID: "2FA7D197-8FB6-49F7-9EEC-1723F243F392", FeatureActionObj: *FeatureActionID0020, ResultTypeCV: "Measurement", VariableObj: *VariableID0004, UnitsObj: *UnitID0002, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}
+  - &ResultID0014 {ResultUUID: "174F2D40-0B03-467F-A4F8-86B584F4E902", FeatureActionObj: *FeatureActionID0021, ResultTypeCV: "Measurement", VariableObj: *VariableID0003, UnitsObj: *UnitID0002, TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0002, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Liquid aqueous", ValueCount: 1}                
+DataSetsResults:
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0001}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0002}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0003}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0004}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0005}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0006}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0007}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0008}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0009}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0010}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0011}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0012}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0013}
+  - {DataSetObj: *DatasetID0001, ResultObj: *ResultID0014}
+MeasurementResults:
+  - &MeasurementResultID0001 {MeasurementResultObj: *ResultID0001, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0002 {MeasurementResultObj: *ResultID0002, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0003 {MeasurementResultObj: *ResultID0003, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0004 {MeasurementResultObj: *ResultID0004, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0005 {MeasurementResultObj: *ResultID0005, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0006 {MeasurementResultObj: *ResultID0006, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0007 {MeasurementResultObj: *ResultID0007, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0008 {MeasurementResultObj: *ResultID0008, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0009 {MeasurementResultObj: *ResultID0009, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0010 {MeasurementResultObj: *ResultID0010, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0011 {MeasurementResultObj: *ResultID0011, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0012 {MeasurementResultObj: *ResultID0012, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0013 {MeasurementResultObj: *ResultID0013, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+  - &MeasurementResultID0014 {MeasurementResultObj: *ResultID0014, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, CensorCodeCV: "Not censored", QualityCodeCV: "Good", AggregationStatisticCV: "Average", TimeAggregationInterval: 0, TimeAggregationIntervalUnitsObj: *UnitID0004}
+MeasurementResultValues:
+  - &MeasurementResultValueID0001 {ResultObj: *ResultID0001, DataValue: 0.0289, ValueDateTime: "2013-05-16 12:00", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0002 {ResultObj: *ResultID0001, DataValue: 0.073, ValueDateTime: "2013-05-16 12:00", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0003 {ResultObj: *ResultID0001, DataValue: 5.2, ValueDateTime: "2013-05-16 12:00", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0004 {ResultObj: *ResultID0001, DataValue: 35.5, ValueDateTime: "2013-05-16 12:00", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0005 {ResultObj: *ResultID0001, DataValue: -124.64051, ValueDateTime: "2013-06-24 11:55", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0006 {ResultObj: *ResultID0001, DataValue: -15.960522, ValueDateTime: "2013-06-24 11:55", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0007 {ResultObj: *ResultID0001, DataValue: 0.1329, ValueDateTime: "2013-06-24 11:55", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0008 {ResultObj: *ResultID0001, DataValue: 1.392, ValueDateTime: "2013-06-24 11:55", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0009 {ResultObj: *ResultID0001, DataValue: 613.1, ValueDateTime: "2013-06-24 11:55", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0010 {ResultObj: *ResultID0001, DataValue: 2419.6, ValueDateTime: "2013-06-24 11:55", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0011 {ResultObj: *ResultID0001, DataValue: 0.0755, ValueDateTime: "2013-07-29 14:30", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0012 {ResultObj: *ResultID0001, DataValue: 0.5761, ValueDateTime: "2013-07-29 14:30", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0013 {ResultObj: *ResultID0001, DataValue: 25.9, ValueDateTime: "2013-07-29 14:30", ValueDateTimeUTCOffset: -7}
+  - &MeasurementResultValueID0014 {ResultObj: *ResultID0001, DataValue: 2419.6, ValueDateTime: "2013-07-29 14:30", ValueDateTimeUTCOffset: -7}
+MeasurementResultValueAnnotations:
+  - {ValueObj: *MeasurementResultValueID0001, AnnotationObj: *AnnotationID001}
+  - {ValueObj: *MeasurementResultValueID0001, AnnotationObj: *AnnotationID002}
+  - {ValueObj: *MeasurementResultValueID0001, AnnotationObj: *AnnotationID003}
+  - {ValueObj: *MeasurementResultValueID0005, AnnotationObj: *AnnotationID001}
+  - {ValueObj: *MeasurementResultValueID0010, AnnotationObj: *AnnotationID002}
+...
+
+
