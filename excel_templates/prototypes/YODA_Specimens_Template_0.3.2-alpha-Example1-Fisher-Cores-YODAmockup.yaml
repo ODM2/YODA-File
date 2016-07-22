@@ -143,22 +143,49 @@ Methods:
   - &MethodID0003 {MethodTypeCV: "Specimen collection", MethodCode: "XRF_minors", MethodName: "XRF of Minor elements", MethodDescription: "Bruker Analytical SRS3000 sequential XRF (at University of Wisconsin-Eau Claire) with minor elements measured on pucks formed under pressure in a mixture of rock powder with SpectroBlend powder (81.0% C, 2.9% O, 13.5% H, 2.6% N). ", MethodLink: NULL, OrganizationObj: *OrganizationID0003}
   - &MethodID0004 {MethodTypeCV: "Specimen collection", MethodCode: "Rotosonic", MethodName: "Rotosonic drilling", MethodDescription: "Geoprobe Rotosonic (model 8140LC)mid-sized track-mounted drilling rig using 4x6 drilling method, resulting in a 4-inch sample diameter and a 6-inch borehole diameter. Some intervals were drilled with air, some with EZ-MUD® Polymer Emulsion (by Baroid IDP).", MethodLink: NULL, OrganizationObj: NULL}
   - &MethodID0005 {MethodTypeCV: "Specimen analysis", MethodCode: "LOI", MethodName: "Loss on ignition", MethodDescription: "1 g of sample ignitied at 925C for 45 mintues.", MethodLink: NULL, OrganizationObj: *OrganizationID0003}
-
-
-
 Variables:
-  - &VariableID0001 {VariableTypeCV: "Chemistry", VariableCode: "TN", VariableNameCV: "Nitrogen, total", VariableDefinition: NULL, SpeciationCV: "N", NoDataValue: "-9999"}
-  - &VariableID0002 {VariableTypeCV: "Chemistry", VariableCode: "TP", VariableNameCV: "Phosphorus, total", VariableDefinition: NULL, SpeciationCV: "P", NoDataValue: "-9999"}
-  - &VariableID0003 {VariableTypeCV: "Chemistry", VariableCode: "Nitrate", VariableNameCV: "Nitrogen, dissolved nitrite (NO2) + nitrate (NO3)", VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: "-9999"}
-  - &VariableID0004 {VariableTypeCV: "Climate", VariableCode: "AirtTemp_Avg", VariableNameCV: "Temperature", VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: "-9999"}
-  - &VariableID0005 {VariableTypeCV: "Climate", VariableCode: "AirtTemp_Min", VariableNameCV: "Temperature", VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: "-9999"}
-  - &VariableID0006 {VariableTypeCV: "Climate", VariableCode: "AirtTemp_Max", VariableNameCV: "Temperature", VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: "-9999"}
+  - &VariableID0001 {VariableTypeCV: Geology, VariableCode: SSAuntreated, VariableNameCV: Specific surface area of untreated sample, VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: -9999}
+  - &VariableID0002 {VariableTypeCV: Geology, VariableCode: SSA-OM, VariableNameCV: Specific surface area of organic removed (muffled) sample, VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: -9999}
+  - &VariableID0003 {VariableTypeCV: Geology, VariableCode: SSA-OM-Fe, VariableNameCV: Specific surface area of iron and aluminum removed from organic removed (muffled) sample, VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: -9999}
+  - &VariableID0004 {VariableTypeCV: Major oxide or element, VariableCode: Na2O, VariableNameCV: Sodium (Na) on oxide basis, VariableDefinition: NULL, SpeciationCV: Na2O, NoDataValue: -9999}
+  - &VariableID0005 {VariableTypeCV: Major oxide or element, VariableCode: MgO, VariableNameCV: Magnesium (Mg) on oxide basis, VariableDefinition: NULL, SpeciationCV: MgO, NoDataValue: -9999}
+  - &VariableID0006 {VariableTypeCV: Major oxide or element, VariableCode: Al2O3, VariableNameCV: Aluminum (Al) on oxide basis, VariableDefinition: NULL, SpeciationCV: Al2O3, NoDataValue: -9999}
+  - &VariableID0007 {VariableTypeCV: Major oxide or element, VariableCode: SiO2, VariableNameCV: Silicon (Si) on oxide basis, VariableDefinition: NULL, SpeciationCV: SiO2, NoDataValue: -9999}
+  - &VariableID0008 {VariableTypeCV: Major oxide or element, VariableCode: K2O, VariableNameCV: Potassium (K) on oxide basis, VariableDefinition: NULL, SpeciationCV: K2O, NoDataValue: -9999}
+  - &VariableID0009 {VariableTypeCV: Major oxide or element, VariableCode: CaO, VariableNameCV: Calcium (Ca) on oxide basis, VariableDefinition: NULL, SpeciationCV: CaO, NoDataValue: -9999}
+  - &VariableID0010 {VariableTypeCV: Major oxide or element, VariableCode: TiO2, VariableNameCV: Titanium (Ti) on oxide basis, VariableDefinition: NULL, SpeciationCV: TiO2, NoDataValue: -9999}
+  - &VariableID0011 {VariableTypeCV: Major oxide or element, VariableCode: MnO, VariableNameCV: Manganese (Mn) on oxide basis, VariableDefinition: NULL, SpeciationCV: MnO, NoDataValue: -9999}
+  - &VariableID0012 {VariableTypeCV: Major oxide or element, VariableCode: Fe2O3, VariableNameCV: Iron (Fe) on oxide basis, VariableDefinition: NULL, SpeciationCV: Fe2O3, NoDataValue: -9999}
+  - &VariableID0013 {VariableTypeCV: Major oxide or element, VariableCode: P2O5, VariableNameCV: Phosphorous (P) on oxide basis, VariableDefinition: NULL, SpeciationCV: P2O5, NoDataValue: -9999}
+  - &VariableID0014 {VariableTypeCV: Chemistry, VariableCode: LOI, VariableNameCV: Loss on ignition, VariableDefinition: NULL, SpeciationCV: NULL, NoDataValue: -9999}
+  - &VariableID0015 {VariableTypeCV: Trace element, VariableCode: Ba, VariableNameCV: Barium (Ba), VariableDefinition: NULL, SpeciationCV: Ba, NoDataValue: -9999}
+  - &VariableID0016 {VariableTypeCV: Trace element, VariableCode: Ce, VariableNameCV: Cerium (Ce), VariableDefinition: NULL, SpeciationCV: Ce, NoDataValue: -9999}
+  - &VariableID0017 {VariableTypeCV: Trace element, VariableCode: Co, VariableNameCV: Cobalt (Co), VariableDefinition: NULL, SpeciationCV: Co, NoDataValue: -9999}
+  - &VariableID0018 {VariableTypeCV: Trace element, VariableCode: Cr, VariableNameCV: Chromium (Cr), VariableDefinition: NULL, SpeciationCV: Cr, NoDataValue: -9999}
+  - &VariableID0019 {VariableTypeCV: Trace element, VariableCode: Cu, VariableNameCV: Copper (Cu), VariableDefinition: NULL, SpeciationCV: Cu, NoDataValue: -9999}
+  - &VariableID0020 {VariableTypeCV: Trace element, VariableCode: Hf, VariableNameCV: Hafnium (Hf), VariableDefinition: NULL, SpeciationCV: Hf, NoDataValue: -9999}
+  - &VariableID0021 {VariableTypeCV: Trace element, VariableCode: La, VariableNameCV: Lanthanum (La), VariableDefinition: NULL, SpeciationCV: La, NoDataValue: -9999}
+  - &VariableID0022 {VariableTypeCV: Trace element, VariableCode: Nb, VariableNameCV: Niobium (Nb), VariableDefinition: NULL, SpeciationCV: Nb, NoDataValue: -9999}
+  - &VariableID0023 {VariableTypeCV: Trace element, VariableCode: Nd, VariableNameCV: Neodymium (Nd), VariableDefinition: NULL, SpeciationCV: Nd, NoDataValue: -9999}
+  - &VariableID0024 {VariableTypeCV: Trace element, VariableCode: Ni, VariableNameCV: Nickel (Ni), VariableDefinition: NULL, SpeciationCV: Ni, NoDataValue: -9999}
+  - &VariableID0025 {VariableTypeCV: Trace element, VariableCode: Pb, VariableNameCV: Lead (Pb), VariableDefinition: NULL, SpeciationCV: Pb, NoDataValue: -9999}
+  - &VariableID0026 {VariableTypeCV: Trace element, VariableCode: Rb, VariableNameCV: Rubidium (Rb), VariableDefinition: NULL, SpeciationCV: Rb, NoDataValue: -9999}
+  - &VariableID0027 {VariableTypeCV: Trace element, VariableCode: Sc, VariableNameCV: Scandium (Sc), VariableDefinition: NULL, SpeciationCV: Sc, NoDataValue: -9999}
+  - &VariableID0028 {VariableTypeCV: Trace element, VariableCode: Sr, VariableNameCV: Strontium (Sr), VariableDefinition: NULL, SpeciationCV: Sr, NoDataValue: -9999}
+  - &VariableID0029 {VariableTypeCV: Trace element, VariableCode: Th, VariableNameCV: Thorium (Th), VariableDefinition: NULL, SpeciationCV: Th, NoDataValue: -9999}
+  - &VariableID0030 {VariableTypeCV: Trace element, VariableCode: V, VariableNameCV: Vanadium (V), VariableDefinition: NULL, SpeciationCV: V, NoDataValue: -9999}
+  - &VariableID0031 {VariableTypeCV: Trace element, VariableCode: Y, VariableNameCV: Yttrium (Y), VariableDefinition: NULL, SpeciationCV: Y, NoDataValue: -9999}
+  - &VariableID0032 {VariableTypeCV: Trace element, VariableCode: Zn, VariableNameCV: Zinc (Zn), VariableDefinition: NULL, SpeciationCV: Zn, NoDataValue: -9999}
+  - &VariableID0033 {VariableTypeCV: Trace element, VariableCode: Zr, VariableNameCV: Zirconium (Zr), VariableDefinition: NULL, SpeciationCV: Zr, NoDataValue: -9999}
+
+
 ProcessingLevels:
   - &ProcessingLevelID0001 {ProcessingLevelCode: "0", Definition: "Raw Data", Explanation: "Raw and unprocessed data and data products that have not undergone quality control.  Depending on the variable, data type, and data transmission system, raw data may be available within seconds or minutes after the measurements have been made. Examples include real time precipitation, streamflow and water quality measurements."}
   - &ProcessingLevelID0002 {ProcessingLevelCode: "1", Definition: "Quality controlled data", Explanation: "Quality controlled data that have passed quality assurance procedures such as routine estimation of timing and sensor calibration or visual inspection and removal of obvious errors. An example is USGS published streamflow records following parsing through USGS quality control procedures."}
   - &ProcessingLevelID0003 {ProcessingLevelCode: "2", Definition: "Derived products", Explanation: "Derived products that require scientific and technical interpretation and may include multiple-sensor data. An example is basin average precipitation derived from rain gages using an interpolation procedure."}
   - &ProcessingLevelID0004 {ProcessingLevelCode: "3", Definition: "Interpreted products", Explanation: "Interpreted products that require researcher driven analysis and interpretation, model-based interpretation using other data and/or strong prior assumptions. An example is basin average precipitation derived from the combination of rain gages and radar return data."}
   - &ProcessingLevelID0005 {ProcessingLevelCode: "4", Definition: "Knowledge products", Explanation: "Knowledge products that require researcher driven scientific interpretation and multidisciplinary data integration and include model-based interpretation using other data and/or strong prior assumptions. An example is percentages of old or new water in a hydrograph inferred from an isotope analysis."}
+
 Actions:
   - &ActionID0001 {ActionTypeCV: "Observation", MethodObj: *MethodIDPLEASE SELECT A VALID METHOD FOR THIS DATA COLUMN, BeginDateTime: NULL, BeginDateTimeUTCOffset: NULL, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Generic observation action generated by Excel Template for TimeSeries v.0.2.1-alpha", ActionFileLink: NULL}
   - &ActionID0002 {ActionTypeCV: "Observation", MethodObj: *MethodIDPLEASE SELECT A VALID METHOD FOR THIS DATA COLUMN, BeginDateTime: NULL, BeginDateTimeUTCOffset: NULL, EndDateTime: NULL, EndDateTimeUTCOffset: NULL, ActionDescription: "Generic observation action generated by Excel Template for TimeSeries v.0.2.1-alpha", ActionFileLink: NULL}
@@ -171,6 +198,8 @@ ActionBy:
   - {ActionObj: *ActionID0001, AffiliationObj: *AffiliationIDPLEASE SELECT A VALID PERSON FOR THIS DATA COLUMN, IsActionLead: TRUE, RoleDescription: NULL}
   - {ActionObj: *ActionID0002, AffiliationObj: *AffiliationIDPLEASE SELECT A VALID PERSON FOR THIS DATA COLUMN, IsActionLead: TRUE, RoleDescription: NULL}
   - {ActionObj: *ActionID0003, AffiliationObj: *AffiliationIDPLEASE SELECT A VALID PERSON FOR THIS DATA COLUMN, IsActionLead: TRUE, RoleDescription: NULL}
+
+
 Results:
   - &ResultID0001 {ResultUUID: NULL, FeatureActionObj: *FeatureActionID0001, ResultTypeCV: "Time series coverage", VariableObj: *VariableID0004, UnitsObj: "degC", TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0001, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Gas", ValueCount: 3359}
   - &ResultID0002 {ResultUUID: NULL, FeatureActionObj: *FeatureActionID0002, ResultTypeCV: "Time series coverage", VariableObj: *VariableID0005, UnitsObj: "degC", TaxonomicClassifierObj: NULL, ProcessingLevelObj: *ProcessingLevelID0001, ResultDateTime: NULL, ResultDateTimeUTCOffset: NULL, ValidDateTime: NULL, ValidDateTimeUTCOffset: NULL, StatusCV: NULL, SampledMediumCV: "Gas", ValueCount: 3359}
@@ -179,18 +208,21 @@ DatasetsResults:
   - {DatasetObj: *DatasetID0001, ResultObj: *ResultID0001}
   - {DatasetObj: *DatasetID0001, ResultObj: *ResultID0002}
   - {DatasetObj: *DatasetID0001, ResultObj: *ResultID0003}
-TimeSeriesResults:
+MeasurementResults:
   - &TimeSeriesResultID0001 {ResultObj: *ResultID0001, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, IntendedTimeSpacing: NULL, IntendedTimeSpacingUnitsObj: NULL, AggregationStatisticCV: "Average"}
   - &TimeSeriesResultID0002 {ResultObj: *ResultID0002, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, IntendedTimeSpacing: NULL, IntendedTimeSpacingUnitsObj: NULL, AggregationStatisticCV: "Minimum"}
   - &TimeSeriesResultID0003 {ResultObj: *ResultID0003, XLocation: NULL, XLocationUnitsObj: NULL, YLocation: NULL, YLocationUnitsObj: NULL, ZLocation: NULL, ZLocationUnitsObj: NULL, SpatialReferenceObj: NULL, IntendedTimeSpacing: NULL, IntendedTimeSpacingUnitsObj: NULL, AggregationStatisticCV: "Maximum"}
-
-ResultValues:
+MeasurementResultValues:
   ColumnDefinitions:
     - {ColumnNumber: 0001, Label: ValueDateTime, ODM2Field: ValueDateTime}
     - {ColumnNumber: 0002, Label: ValueDateTimeUTCOffset, ODM2Field: ValueDateTimeUTCOffset}
     - {ColumnNumber: 0003, Label: "AirTemp_Avg", ODM2Field: "DataValue", Result: *TimeSeriesResultID0001, CensorCodeCV: "Not censored", QualityCodeCV: "Good", TimeAggregationInterval: 15, TimeAggregationIntervalUnitsObj: "sec"}
     - {ColumnNumber: 0004, Label: "AirTemp_Min", ODM2Field: "DataValue", Result: *TimeSeriesResultID0002, CensorCodeCV: "Not censored", QualityCodeCV: "Good", TimeAggregationInterval: 15, TimeAggregationIntervalUnitsObj: "sec"}
     - {ColumnNumber: 0005, Label: "AirTemp_Max", ODM2Field: "DataValue", Result: *TimeSeriesResultID0003, CensorCodeCV: "Not censored", QualityCodeCV: "Good", TimeAggregationInterval: 15, TimeAggregationIntervalUnitsObj: "sec"}
+
+
+
+
   Data:
   - [[
 SpecimenCode, CollectionDate, SSAuntreated, SSA-OM, SSA-OM-Fe, Na2O_censorCode, Na2O_percent, MgO_percent, Al2O3_percent, SiO2_percent, K2O_percent, CaO_percent, TiO2_percent, MnO_percent, Fe2O3_percent, P2O5_percent, LOI_percent, Ba_ppm, Ce_ppm, Co_ppm, Cr_ppm, Cu_ppm, Hf_ppm, La_ppm, Nb_ppm, Nd_ppm, Ni_ppm, Pb_ppm, Rb_ppm, Sc_ppm, Sr_ppm, Th_ppm, V_ppm, Y_ppm, Zn_ppm, Zr_ppm ], [
@@ -300,3 +332,5 @@ LP_Well02_1991-2012cm, 3-Aug-12, -9999, -9999, -9999, NULL, 1.66, 2.48, 19.51, 5
 LP_Well02_2093-2109cm, 3-Aug-12, -9999, -9999, -9999, NULL, 1.56, 2.14, 20.07, 58.78, 2.87, 1.45, 1.03, 0.27, 9.61, 0.17, -9999, 574, 123.7, 63, 83, 85, 5.1, 63.1, 21.6, 63.7, 57, 18.1, 97, 19, 179, 8, 128.9, 45.6, 143, 181 ], [
 LP_Well02_2109-2134cm, 3-Aug-12, -9999, -9999, -9999, NULL, 1.47, 1.86, 22.81, 55, 3.84, 1.13, 1.17, 0.14, 10.26, 0.21, -9999, 724, 160.5, 57, 95, 60, 5.7, 75.3, 21.9, 80, 52, 19.3, 122, 24, 200, 9.6, 150.9, 45.8, 121, 202 ], [
 ]]
+  ResultUUID:
+  - [[
