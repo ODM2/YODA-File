@@ -11,7 +11,7 @@ A ***YODA profile*** is defined by the *expectations and constraints* within the
 The following YODA profiles have been developed for common dataset types to serve corresponding [Excel templates](https://github.com/ODM2/YODA-File/tree/master/excel_templates). Each Excel template for YODA serves a single YODA profile.
 
 
-###YODA profiles developed for Excel Templates:
+### YODA profiles developed for Excel Templates:
 
 **Time Series**: Use this template if you are creating a YODA file for observations derived from in-situ sensors or other regularly spaced time series data (e.g., your input data are formatted similar to a datalogger output file with one date/time column and multiple data columns where each data column represents a different variable).
 
@@ -41,7 +41,7 @@ For example Excel template implementations, see the [examples folder](https://gi
 
 
 
-###Other envisioned YODA profiles:
+### Other envisioned YODA profiles:
 
 * Spectra for [ODM2 SpectraResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_spectra.md)
 * SensorDepthProfile for [ODM2 ProfileResults](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_profile.md)

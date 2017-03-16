@@ -1,14 +1,14 @@
 YAML Observation Data Archive & Exchange (YODA) Format
 ===============
 
-###Getting Started with YODA
+### Getting Started with YODA
 YODA is an observational data encoding format using YAML.
 
 * [Blank YODA Excel Templates](https://github.com/ODM2/YODA-File/tree/master/excel_templates) - Get blank templates and get started. The [Time Series template](https://github.com/ODM2/YODA-File/tree/master/excel_templates/time_series) is ready to use.
 * [Example Excel Templates and YODA files](https://github.com/ODM2/YODA-File/tree/master/examples) - View examples that have been populated with data.
 * [YODA Documentation](https://github.com/ODM2/YODA-File/tree/master/doc) - Read the YODA File Specification and other documentation.
 
-###Goals
+### Goals
 We developed the **YAML Observation Data Archive & Exchange (YODA) File Format** to serve as a specification for human-readable, machine-parseable, text-based data files that accommodate the full diversity of critical zone science data -- such as hydrological time series, soil profile geochemistry, biodiversity transects, etc. -- that can be organized with the [Observations Data Model v2 (ODM2)](https://github.com/ODM2/ODM2)  Specifically, we designed the YODA File format to meet the following requirements:
 
 * **Easy for humans to read and use**. Anyone opening the file in a text editor or spreadsheet application should be able to intuitively understand the contents of the file's structured metadata header and comma-separated data table.
@@ -16,8 +16,8 @@ We developed the **YAML Observation Data Archive & Exchange (YODA) File Format**
 * **Group results into a single data array** similar to how scientists most commonly view their data, but also conforming to the metadata requirements of an [ODM2](https://github.com/ODM2/ODM2) [Dataset](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/core_datasets.md).
 * **Serve as a self-describing archival file format** that is readily accepted by earth and environmental science data repositories, such as [IEDA EarthChem Library](http://www.earthchem.org/library) or [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/)
 
-###Design Vision
-A YODA File follows the data serialization and interchange format of [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), a superset of [JSON](http://www.json.org/) (JavaScript Object Notation). YAML can be readily [parsed by any modern computer language](http://yaml.org/). 
+### Design Vision
+A YODA File follows the data serialization and interchange format of [YAML](http://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language"), a superset of [JSON](http://www.json.org/) (JavaScript Object Notation). YAML can be readily [parsed by any modern computer language](http://yaml.org/).
 
 The key feature of a YODA file that distiguishes it from generic YAML is that a YODA file (1) organizes data into a comma-separated data array (e.g. a data table or DataFrame) with multiple columns and rows, and (2) provides all the metadata of an [ODM2](https://github.com/ODM2/ODM2) [Dataset](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/core_datasets.md) so that the data array can be parsed by software into an [ODM2](https://github.com/ODM2/ODM2) database instance.
 
@@ -27,13 +27,13 @@ A YODA File will be structurally validated against required and optional ODM2 fi
 
 We are also developing the [YODA Tools](https://github.com/ODM2/YodaTools) library, which is built upon the [ODM2PythonAPI](https://github.com/ODM2/ODM2PythonAPI) to create YODA files from our [YODA Excel Templates](https://github.com/ODM2/YODA-File/tree/master/excel_templates) or from an ODM2 database and to import YODA Files into an ODM2 database. YODA Files will thus serve as an interchange format between components of the [ODM2 Software Ecosystem](http://www.odm2.org/).
 
-###Specification
+### Specification
 The [draft YODA File Specification](https://github.com/ODM2/YODA-File/blob/master/doc/YODAFile_Specification_Draft0.md) and [other YODA File documentation](https://github.com/ODM2/YODA-File/tree/master/doc) provide many design and implementation details, but are presently a *work in progress*.
 
-###History
+### History
 The YODA file format developed out of the effort to substantially extend the CZO Display File specfication. The original [CZO Display File](http://criticalzone.org/national/publications/pub/whitenack-et-al-2011-czo-display-file-specification/) format was developed in 2010-2011 as a means for [US Critical Zone Observatories](http://criticalzone.org/) to share data in a form that was both human readable and machine parsable. The header provides structured metadata that allows the comma-separated data to be ingested into an [Observations Data Model 1.1 (ODM1.1)](http://his.cuahsi.org/odmdatabases.html) database, such as a [CUAHSI HydroServer](http://his.cuahsi.org/hydroserver.html).
 
-###Contribute
+### Contribute
 There are many ways to contribute:
 * Help us develop the YODA File specification document.
 * Help us develop the JSON-schema validation tools.

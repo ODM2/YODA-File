@@ -4,7 +4,7 @@ The folders in this directory hold blank Microsoft Excel templates for generatin
 
 
 
-###Excel templates exist for the following YODA profiles:
+### Excel templates exist for the following YODA profiles:
 1. [Time Series](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
 2. [Specimens](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
 3. [Specimen Time Series](https://github.com/ODM2/YODA-File/blob/master/doc/YODA_profiles.md)
