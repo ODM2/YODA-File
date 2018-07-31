@@ -5,7 +5,7 @@ A ***YODA profile*** is defined by the *expectations and constraints* within the
 
 * *[ODM2 ResultTypes](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results.md)*
 * *[SamplingFeatures](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_samplingfeatures.md)* (i.e. sites, specimens)
-* The *row index*, which is the column(s) of metadata that uniqely distinquishes one row from another.
+* The *row index*, which is the column(s) of metadata that uniquely distinguishes one row from another.
 * Each *data column*
 
 The following YODA profiles have been developed for common dataset types to serve corresponding [Excel templates](https://github.com/ODM2/YODA-File/tree/master/excel_templates). Each Excel template for YODA serves a single YODA profile.
@@ -13,7 +13,7 @@ The following YODA profiles have been developed for common dataset types to serv
 
 ## YODA profiles developed for Excel Templates:
 
-### Time Series: 
+### Time Series:
 Use this template if you are creating a YODA file for observations derived from in-situ sensors or other regularly spaced time series data (e.g., your input data are formatted similar to a datalogger output file with one date/time column and multiple data columns where each data column represents a different variable).
 
 * *ODM2 ResultTypes*: [Time Series Coverage Results](https://github.com/ODM2/ODM2/blob/master/doc/ODM2Docs/ext_results_timeseries.md) ([diagrams](http://odm2.github.io/ODM2/schemas/ODM2_Current/diagrams/ODM2Results.html))
